@@ -584,6 +584,13 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "the-monument", name: "The Monument", category: "Unexplained" },
   { id: "inspector-547", name: "Inspector 547", category: "Subject" },
   { id: "celia", name: "Celia", category: "Subject" },
-  { id: "the-refuge", name: "The tunnels refuge", category: "Organisation" }
+  { id: "the-refuge", name: "The tunnels refuge", category: "Organisation" },
+
+  /* -- MAG191–200 ------------------------------------------------------ */
+  { id: "arun", name: "Arun", category: "Subject" },
+  { id: "laverne", name: "Laverne", category: "Subject" },
+  { id: "the-watchers", name: "The Archivists", category: "Unexplained" },
+  { id: "geoffrey-neckam", name: "Geoffrey Neckam", category: "Subject" },
+  { id: "the-lighter", name: "The lighter", category: "Unexplained" }
 
 ]);

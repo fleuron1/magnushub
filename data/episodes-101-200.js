@@ -722,14 +722,84 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The tunnels under London, and the survivors Georgie and Melanie are keeping alive."
   },
-  { num: 191, title: "What We Lose" },
-  { num: 192, title: "An Appointment" },
-  { num: 193, title: "A Stern Look" },
-  { num: 194, title: "Parting" },
-  { num: 195, title: "Adrift" },
-  { num: 196, title: "This Old House" },
-  { num: 197, title: "Connected" },
-  { num: 198, title: "Precipice" },
-  { num: 199, title: "Seeing It Through" },
-  { num: 200, title: "Last Words" },
+  {
+    num: 191,
+    title: "What We Lose",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Underground with the survivors, and what winning would cost the Archivist."
+  },
+  {
+    num: 192,
+    title: "An Appointment",
+    giver: "Rosie",
+    given: "Post-Change",
+    subject:
+      "The assistant who sat outside Elias Bouchard's office for years and heard everything."
+  },
+  {
+    num: 193,
+    title: "A Stern Look",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Elias Bouchard's job interview, and who was actually conducting it."
+  },
+  {
+    num: 194,
+    title: "Parting",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A father who will not get off his son's shoulder, and a disappearance."
+  },
+  {
+    num: 195,
+    title: "Adrift",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "An ocean with no shore, and the island Basira was left on."
+  },
+  {
+    num: 196,
+    title: "This Old House",
+    giver: "Annabelle Cane",
+    given: "Post-Change",
+    subject:
+      "The history of the house at Hill Top Road, read aloud under duress."
+  },
+  {
+    num: 197,
+    title: "Connected",
+    giver: "Annabelle Cane",
+    given: "Post-Change",
+    subject:
+      "What the Web has been building, and what it is offering."
+  },
+  {
+    num: 198,
+    title: "Precipice",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A ladder down a cliff that should not be climbable."
+  },
+  {
+    num: 199,
+    title: "Seeing It Through",
+    giver: "The survivors",
+    given: "Post-Change",
+    subject:
+      "Three options, put to a vote."
+  },
+  {
+    num: 200,
+    title: "Last Words",
+    giver: "No statement",
+    given: "Post-Change",
+    subject:
+      "The Panopticon."
+  },
 ]);
