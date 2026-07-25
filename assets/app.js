@@ -69,6 +69,7 @@
 
   var state = {
     ep: 1,           // the episode you are currently on
+    done: false,     // have you finished it? if so it unseals
     id: null,
     view: "profile", // "profile" | "log"
     query: "",
@@ -78,7 +79,7 @@
   var el = {};
   ["episodeRange", "gateEpisode", "gateTitle", "gateReveal", "tickRow", "epPrev",
    "epNext", "search", "filterRow", "charList", "indexEmpty", "profile",
-   "timelineBtn", "themeToggle"].forEach(function (id) {
+   "timelineBtn", "themeToggle", "doneToggle", "gateKicker"].forEach(function (id) {
     el[id] = document.getElementById(id);
   });
 
@@ -93,8 +94,9 @@
     return null;
   }
 
-  // Everything strictly before the episode you are on.
-  function reveal() { return state.ep - 1; }
+  // Everything before the episode you are on — plus that episode itself once
+  // you tick "finished", which is the only way MAG200's own content unseals.
+  function reveal() { return state.done ? state.ep : state.ep - 1; }
 
   function upTo(list, ep) {
     return list.filter(function (e) { return e.ep <= ep; });
@@ -126,6 +128,9 @@
   function readHash() {
     var h = window.location.hash.replace(/^#/, "");
     if (!h) return;
+    // The hash is the whole state, so an absent key means off — otherwise
+    // navigating from a done=1 URL to one without it leaves the flag stuck on.
+    state.done = false;
     h.split("/").forEach(function (part) {
       var kv = part.split("=");
       if (kv.length !== 2) return;
@@ -133,6 +138,7 @@
         var n = parseInt(kv[1], 10);
         if (n >= 1 && n <= MAX_EP) state.ep = n;
       }
+      if (kv[0] === "done") state.done = kv[1] === "1";
       if (kv[0] === "c") {
         if (kv[1] === "log") { state.view = "log"; state.id = null; }
         else if (kv[1]) { state.id = kv[1]; state.view = "profile"; }
@@ -142,7 +148,8 @@
 
   var writingHash = false;
   function writeHash() {
-    var h = "#ep=" + state.ep + "/c=" + (state.view === "log" ? "log" : (state.id || ""));
+    var h = "#ep=" + state.ep + (state.done ? "/done=1" : "") +
+            "/c=" + (state.view === "log" ? "log" : (state.id || ""));
     if ("#" + window.location.hash.replace(/^#/, "") === h) return;
     writingHash = true;
     window.history.replaceState(null, "", h);
@@ -162,6 +169,13 @@
     el.gateReveal.textContent = reveal() < 1
       ? "nothing revealed yet"
       : "revealed through " + pad(reveal());
+
+    el.gateKicker.textContent = state.done ? "Finished" : "Currently on";
+    el.doneToggle.setAttribute("aria-pressed", state.done ? "true" : "false");
+    el.doneToggle.classList.toggle("on", state.done);
+    el.doneToggle.title = state.done
+      ? "Unticked, " + pad(state.ep) + " reseals"
+      : "Tick once you have finished " + pad(state.ep);
   }
 
   function buildTicks() {
@@ -315,8 +329,9 @@
     if (isFeatured(rec)) {
       var flag = node("p", "featured-flag");
       flag.appendChild(node("span", "dot"));
-      flag.appendChild(document.createTextNode(
-        "Features in " + pad(state.ep) + ", the episode you are on. Nothing below reflects it yet."));
+      flag.appendChild(document.createTextNode(state.done
+        ? "Features in " + pad(state.ep) + ", which you have marked finished — it is included below."
+        : "Features in " + pad(state.ep) + ", the episode you are on. Nothing below reflects it yet."));
       head.appendChild(flag);
     }
 
@@ -503,6 +518,11 @@
     el.epPrev.addEventListener("click", function () { setEp(state.ep - 1); });
     el.epNext.addEventListener("click", function () { setEp(state.ep + 1); });
 
+    el.doneToggle.addEventListener("click", function () {
+      state.done = !state.done;
+      render();
+    });
+
     el.search.addEventListener("input", function () {
       state.query = el.search.value.trim();
       renderIndex();
@@ -524,6 +544,9 @@
       if (ev.key === "[") { ev.preventDefault(); setEp(state.ep - 1); }
       if (ev.key === "]") { ev.preventDefault(); setEp(state.ep + 1); }
       if (ev.key === "/") { ev.preventDefault(); el.search.focus(); }
+      if (ev.key === "f" || ev.key === "F") {
+        ev.preventDefault(); state.done = !state.done; render();
+      }
     });
 
     window.addEventListener("hashchange", function () {

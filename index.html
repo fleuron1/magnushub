@@ -33,26 +33,29 @@
   <div class="gate">
     <div class="gate-inner">
       <div class="gate-label">
-        <span class="gate-kicker">Currently on</span>
-        <strong id="gateEpisode">MAG100</strong>
+        <span class="gate-kicker" id="gateKicker">Currently on</span>
+        <strong id="gateEpisode">MAG200</strong>
         <span id="gateTitle" class="gate-title"></span>
         <span id="gateReveal" class="gate-reveal"></span>
       </div>
 
       <div class="gate-slider">
-        <input id="episodeRange" type="range" min="1" max="100" step="1" value="100"
+        <input id="episodeRange" type="range" min="1" max="200" step="1" value="200"
                aria-label="Episode you are currently on">
         <div class="tick-row" id="tickRow"></div>
       </div>
 
       <div class="gate-nudge">
+        <button id="doneToggle" class="ghost-btn done-btn" type="button" aria-pressed="false">
+          <span class="tick" aria-hidden="true"></span>Finished it
+        </button>
         <button id="epPrev" class="ghost-btn small" type="button" aria-label="Previous episode">&#8592;</button>
         <button id="epNext" class="ghost-btn small" type="button" aria-label="Next episode">&#8594;</button>
       </div>
     </div>
     <p class="gate-note">
-      The episode you are on stays sealed — profiles update once you move past it.
-      <span class="dim">Keyboard: <kbd>[</kbd> / <kbd>]</kbd></span>
+      The episode you are on stays sealed — tick <em>Finished it</em>, or move past it, to unseal it.
+      <span class="dim">Keyboard: <kbd>[</kbd> / <kbd>]</kbd> episode · <kbd>f</kbd> finished</span>
     </p>
   </div>
 </header>
@@ -81,7 +84,7 @@
 
 <footer class="site-foot">
   <p>
-    An unofficial fan reference for <em>The Magnus Archives</em> by Rusty Quill, covering MAG001–MAG100.
+    An unofficial fan reference for <em>The Magnus Archives</em> by Rusty Quill, covering MAG001–MAG200.
     Summaries are original; no transcript text is reproduced.
     Episode details checked against the
     <a href="https://snarp.github.io/magnus_archives_transcripts/" rel="noopener noreferrer" target="_blank">public transcript archive</a>.
@@ -93,6 +96,7 @@
 
 <script src="data/episodes.js"></script>
 <script src="data/episodes-011-100.js"></script>
+<script src="data/episodes-101-200.js"></script>
 <script src="data/characters.js"></script>
 <script src="data/facts/f001-010.js"></script>
 <script src="data/facts/f011-020.js"></script>
@@ -104,6 +108,16 @@
 <script src="data/facts/f071-080.js"></script>
 <script src="data/facts/f081-090.js"></script>
 <script src="data/facts/f091-100.js"></script>
+<script src="data/facts/f101-110.js"></script>
+<script src="data/facts/f111-120.js"></script>
+<script src="data/facts/f121-130.js"></script>
+<script src="data/facts/f131-140.js"></script>
+<script src="data/facts/f141-150.js"></script>
+<script src="data/facts/f151-160.js"></script>
+<script src="data/facts/f161-170.js"></script>
+<script src="data/facts/f171-180.js"></script>
+<script src="data/facts/f181-190.js"></script>
+<script src="data/facts/f191-200.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
