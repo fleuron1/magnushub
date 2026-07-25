@@ -242,16 +242,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The aftermath, in five accounts — and what was found in the tunnels underneath."
   },
-  { num: 41, title: "Too Deep" },
-  { num: 42, title: "Grifter's Bone" },
-  { num: 43, title: "Section 31" },
-  { num: 44, title: "Tightrope" },
-  { num: 45, title: "Blood Bag" },
-  { num: 46, title: "Literary Heights" },
-  { num: 47, title: "The New Door" },
-  { num: 48, title: "Lost in the Crowd" },
-  { num: 49, title: "The Butcher's Window" },
-  { num: 50, title: "Foundations" },
+  {
+    num: 41,
+    title: "Too Deep",
+    giver: "Jonathan Sims",
+    given: "2 September 2016",
+    subject:
+      "The Head Archivist's own account of descending into the tunnels below the Archive."
+  },
+  {
+    num: 42,
+    title: "Grifter's Bone",
+    giver: "Jennifer Ling",
+    given: "3 November 2013",
+    subject:
+      "A band that plays unannounced, and the eleven people in the room when it did."
+  },
+  {
+    num: 43,
+    title: "Section 31",
+    giver: "Basira Hussain",
+    given: "19 September 2016",
+    subject:
+      "How the police file the things they cannot write up honestly."
+  },
+  {
+    num: 44,
+    title: "Tightrope",
+    giver: "Yuri Utkin",
+    given: "2 March 1979",
+    subject:
+      "A circus that came to a Russian village out of season in 1952."
+  },
+  {
+    num: 45,
+    title: "Blood Bag",
+    giver: "Thomas Neill",
+    given: "9 February 2011",
+    subject:
+      "A malaria lab, a Victorian syringe sold to a dealer, and the blood in the feeding bags."
+  },
+  {
+    num: 46,
+    title: "Literary Heights",
+    giver: "Herbert Knox",
+    given: "21 December 1998",
+    subject:
+      "A bookseller's regular customer, and the bell tower he followed him up."
+  },
+  {
+    num: 47,
+    title: "The New Door",
+    giver: "Helen Richardson",
+    given: "2 October 2016",
+    subject:
+      "A yellow door on the second floor of a house that had only ever had two."
+  },
+  {
+    num: 48,
+    title: "Lost in the Crowd",
+    giver: "Andrea Nunis",
+    given: "25 March 2010",
+    subject:
+      "A crowd in Genoa with no faces in it, and the stranger who said to think of her mother."
+  },
+  {
+    num: 49,
+    title: "The Butcher's Window",
+    giver: "Gregory Pryor",
+    given: "11 March 2008",
+    subject:
+      "A private investigator's tail on a drug mule, and the butcher's shop it ended at."
+  },
+  {
+    num: 50,
+    title: "Foundations",
+    giver: "Sampson Kempthorne",
+    given: "12 June 1841",
+    subject:
+      "An architect's assistant who designed workhouses in a trance, and the fingertips in the wall."
+  },
   { num: 51, title: "High Pressure" },
   { num: 52, title: "Exceptional Risk" },
   { num: 53, title: "Crusader" },
