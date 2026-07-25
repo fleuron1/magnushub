@@ -20,6 +20,10 @@ episode-tagged facts.
   in that episode stay hidden, because naming them would give it away.
 - **Nothing past the gate is rendered.** Filtering happens before the DOM is
   built, not with CSS.
+- **A fresh visit opens at MAG001**, revealing nothing. Someone arriving with no
+  URL state has told us nothing about how far they have listened, and for a
+  spoiler gate the safe assumption is "not at all". A link carrying `#ep=` still
+  wins.
 - **Profiles grow.** Each fact is tagged with the episode that establishes it,
   so a profile is a timeline. Jonathan Sims at MAG001 is a man tidying a filing
   system; by MAG200 he is something else entirely, and you can watch the

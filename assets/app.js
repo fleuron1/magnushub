@@ -504,7 +504,10 @@
       }
     }, true);
 
-    state.ep = MAX_EP;                 // default: caught up
+    // Default to the start, not the end. A first-time visitor with no hash has
+    // told us nothing about how far they have listened, and the safe assumption
+    // for a spoiler gate is "not at all" rather than "all of it".
+    state.ep = 1;
     readHash();
 
     var saved = null;
