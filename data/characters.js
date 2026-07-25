@@ -487,6 +487,36 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "mary-randall", name: "Mary Randall", category: "Subject" },
   { id: "eberhart-and-strauss", name: "Eberhart and Strauss", category: "Organisation" },
   { id: "the-last-feast", name: "The Last Feast", category: "Unexplained" },
-  { id: "the-flesh", name: "The Flesh", category: "Unexplained" }
+  { id: "the-flesh", name: "The Flesh", category: "Unexplained" },
+
+  /* -- MAG131–140 ------------------------------------------------------ */
+  { id: "percy-fawcett", name: "Percy Fawcett", category: "Statement Giver",
+    statement: { ep: 133, ref: "MAG133 — Dead Horse", given: "27 June 1930" } },
+  { id: "alison-killala", name: "Alison Killala", category: "Statement Giver",
+    statement: { ep: 136, ref: "MAG136 — The Puppeteer", given: "1 December 2012" } },
+  { id: "wallis-turner", name: "Wallis Turner", category: "Statement Giver",
+    statement: { ep: 137, ref: "MAG137 — Nemesis", given: "3 July 1955" } },
+  { id: "eugene-vanderstock", name: "Eugene Vanderstock", category: "Statement Giver",
+    statement: { ep: 139, ref: "MAG139 — Chosen", given: "30 November 2006" } },
+  { id: "john-flamsteed", name: "John Flamsteed", category: "Statement Giver",
+    statement: { ep: 140, ref: "MAG140 — The Movement of the Heavens", given: "1715" } },
+
+  { id: "the-hunt", name: "The Hunt", category: "Unexplained" },
+  { id: "jack-fawcett", name: "Jack Fawcett", category: "Subject" },
+  { id: "raleigh-rimmell", name: "Raleigh Rimmell", category: "Subject" },
+  { id: "the-extinction", name: "The Extinction", category: "Unexplained" },
+  { id: "bernadette-delcour", name: "Bernadette Delcour", category: "Subject" },
+  { id: "garland-hillier", name: "Garland Hillier", category: "Subject" },
+  { id: "the-dark", name: "The Dark", category: "Unexplained" },
+  { id: "the-black-star", name: "The Black Star", category: "Unexplained" },
+  { id: "mr-pitch", name: "Mr Pitch", category: "Unexplained" },
+  { id: "the-nemesis", name: "The Nemesis", category: "Unexplained" },
+  { id: "leonard-holden", name: "Leonard Holden", category: "Subject" },
+  { id: "watchers-crown", name: "The Watcher's Crown", category: "Unexplained" },
+  { id: "millbank", name: "Millbank Prison", category: "Organisation" },
+  { id: "alexander-cunningham", name: "Alexander Cunningham", category: "Subject" },
+  { id: "eileen-montague", name: "Eileen Montague", category: "Subject" },
+  { id: "scoured-earth", name: "The Scoured Earth", category: "Unexplained" },
+  { id: "edmund-halley", name: "Edmund Halley", category: "Subject" }
 
 ]);

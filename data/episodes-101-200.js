@@ -242,16 +242,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A temple in Istanbul, and the pit they made her feed."
   },
-  { num: 131, title: "Flesh" },
-  { num: 132, title: "Entombed" },
-  { num: 133, title: "Dead Horse" },
-  { num: 134, title: "Time of Revelation" },
-  { num: 135, title: "Dark Matter" },
-  { num: 136, title: "The Puppeteer" },
-  { num: 137, title: "Nemesis" },
-  { num: 138, title: "The Architecture of Fear" },
-  { num: 139, title: "Chosen" },
-  { num: 140, title: "The Movement of the Heavens" },
+  {
+    num: 131,
+    title: "Flesh",
+    giver: "Jared Hopworth",
+    given: "21 March 2019",
+    subject:
+      "The Boneturner, compelled to speak while trapped inside Helen's corridors."
+  },
+  {
+    num: 132,
+    title: "Entombed",
+    giver: "Jonathan Sims",
+    given: "28 March 2019",
+    subject:
+      "The Archivist goes down into the coffin after Daisy."
+  },
+  {
+    num: 133,
+    title: "Dead Horse",
+    giver: "Percy Fawcett",
+    given: "27 June 1930",
+    subject:
+      "A second Amazon expedition, and the thing it started hunting."
+  },
+  {
+    num: 134,
+    title: "Time of Revelation",
+    giver: "Adelard Dekker",
+    given: "22 January 2006",
+    subject:
+      "A letter to Gertrude arguing there is a fifteenth power."
+  },
+  {
+    num: 135,
+    title: "Dark Matter",
+    giver: "Manuela Dominguez",
+    given: "14 July 2014",
+    subject:
+      "Building a Black Star in orbit for Maxwell Rayner's church."
+  },
+  {
+    num: 136,
+    title: "The Puppeteer",
+    giver: "Alison Killala",
+    given: "1 December 2012",
+    subject:
+      "An effects artist who could not move, and the woman who visited."
+  },
+  {
+    num: 137,
+    title: "Nemesis",
+    giver: "Wallis Turner",
+    given: "3 July 1955",
+    subject:
+      "A prisoner-of-war camp in Hong Kong, and the ship that came in the night."
+  },
+  {
+    num: 138,
+    title: "The Architecture of Fear",
+    giver: "Robert Smirke",
+    given: "13 February 1867",
+    subject:
+      "The architect's deathbed letter to Jonah Magnus."
+  },
+  {
+    num: 139,
+    title: "Chosen",
+    giver: "Eugene Vanderstock",
+    given: "30 November 2006",
+    subject:
+      "How the Lightless Flame made Agnes Montague, and why she asked to be hanged."
+  },
+  {
+    num: 140,
+    title: "The Movement of the Heavens",
+    giver: "John Flamsteed",
+    given: "1715",
+    subject:
+      "The first Astronomer Royal confesses to a murder that did not take."
+  },
   { num: 141, title: "Doomed Voyage" },
   { num: 142, title: "Scrutiny" },
   { num: 143, title: "Heart of Darkness" },
