@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Magnus Archive — a spoiler-safe character reader</title>
+<meta name="description" content="Character profiles for The Magnus Archives that only reveal what is known up to the episode you choose.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128065;</text></svg>">
+</head>
+<body>
+
+<a class="skip" href="#profile">Skip to profile</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">&#128065;</span>
+      <div>
+        <h1>The Magnus Archive</h1>
+        <p class="brand-sub">A character reader that stops where you do.</p>
+      </div>
+    </div>
+
+    <div class="masthead-tools">
+      <button id="themeToggle" class="ghost-btn" type="button" aria-label="Toggle light and dark theme">
+        <span class="theme-icon" aria-hidden="true"></span><span class="theme-label">Paper</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Episode gate ------------------------------------------------------- -->
+  <div class="gate">
+    <div class="gate-inner">
+      <div class="gate-label">
+        <span class="gate-kicker">Reveal up to</span>
+        <strong id="gateEpisode">MAG010</strong>
+        <span id="gateTitle" class="gate-title">Vampire Killer</span>
+      </div>
+
+      <div class="gate-slider">
+        <input id="episodeRange" type="range" min="1" max="10" step="1" value="10"
+               aria-label="Episode to reveal up to" list="epTicks">
+        <datalist id="epTicks">
+          <option value="1"></option><option value="2"></option><option value="3"></option>
+          <option value="4"></option><option value="5"></option><option value="6"></option>
+          <option value="7"></option><option value="8"></option><option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+        <div class="tick-row" id="tickRow"></div>
+      </div>
+
+      <div class="gate-nudge">
+        <button id="epPrev" class="ghost-btn small" type="button" aria-label="Previous episode">&#8592;</button>
+        <button id="epNext" class="ghost-btn small" type="button" aria-label="Next episode">&#8594;</button>
+      </div>
+    </div>
+    <p class="gate-note">
+      Nothing past this point is drawn on the page. <span class="dim">Keyboard: <kbd>[</kbd> / <kbd>]</kbd></span>
+    </p>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- Index ------------------------------------------------------------- -->
+  <aside class="index" aria-label="Character index">
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search the index…" autocomplete="off" aria-label="Search characters">
+    </div>
+
+    <div class="filter-row" id="filterRow" role="group" aria-label="Filter by category"></div>
+
+    <nav id="charList" class="char-list"></nav>
+
+    <p id="indexEmpty" class="empty-note" hidden>No entries match.</p>
+
+    <button id="timelineBtn" class="timeline-btn" type="button">View statement log &#8594;</button>
+  </aside>
+
+  <!-- Profile ----------------------------------------------------------- -->
+  <section id="profile" class="profile" tabindex="-1" aria-live="polite"></section>
+
+</main>
+
+<footer class="site-foot">
+  <p>
+    An unofficial fan reference for <em>The Magnus Archives</em> by Rusty Quill, covering MAG001–MAG010.
+    Summaries are original; no transcript text is reproduced.
+    Source details drawn from the
+    <a href="https://snarp.github.io/magnus_archives_transcripts/" rel="noopener noreferrer" target="_blank">public transcript archive</a>.
+  </p>
+  <p class="dim">
+    Profiles are filtered in the browser, so the full dataset ships with the page — the gate is for honest listeners, not a vault.
+  </p>
+</footer>
+
+<script src="data/episodes.js"></script>
+<script src="data/characters.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
