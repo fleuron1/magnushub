@@ -240,7 +240,29 @@ input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-of
 .tick-row span:hover { color: var(--ink); }
 .tick-row span.on { color: var(--accent); font-weight: 700; }
 
-.gate-nudge { display: flex; gap: 0.35rem; }
+.gate-nudge { display: flex; gap: 0.35rem; align-items: center; }
+
+/* "Finished it" — unseals the episode you are on */
+.done-btn { white-space: nowrap; }
+.done-btn .tick {
+  display: inline-block;
+  width: 11px; height: 11px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  position: relative;
+  flex: none;
+}
+.done-btn.on { color: var(--accent); border-color: var(--accent); background: var(--accent-glow); }
+.done-btn.on .tick { border-color: var(--accent); background: var(--accent); }
+.done-btn.on .tick::after {
+  content: "";
+  position: absolute;
+  left: 3px; top: 0px;
+  width: 3px; height: 7px;
+  border: solid var(--bg);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
 
 .gate-note {
   max-width: 1180px;

@@ -5,7 +5,8 @@ know. Set the slider to the episode you are **currently on**, and every profile
 shows the Archive as it stood *before* that episode — its own revelations stay
 sealed until you move past it.
 
-**Coverage: MAG001–MAG100.** 273 figures, ~1,400 episode-tagged facts.
+**Coverage: MAG001–MAG200 — the complete run.** 401 figures, ~2,250
+episode-tagged facts.
 
 ## How it works
 
@@ -19,10 +20,18 @@ sealed until you move past it.
   in that episode stay hidden, because naming them would give it away.
 - **Nothing past the gate is rendered.** Filtering happens before the DOM is
   built, not with CSS.
+- **A fresh visit opens at MAG001**, revealing nothing. Someone arriving with no
+  URL state has told us nothing about how far they have listened, and for a
+  spoiler gate the safe assumption is "not at all". A link carrying `#ep=` still
+  wins.
 - **Profiles grow.** Each fact is tagged with the episode that establishes it,
   so a profile is a timeline. Jonathan Sims at MAG001 is a man tidying a filing
-  system; by MAG100 he is something else entirely, and you can watch the
+  system; by MAG200 he is something else entirely, and you can watch the
   turn happen one episode at a time.
+- **"Finished it"** unseals the episode you are on, for when you have just
+  ended one and want to look something up before starting the next. It is also
+  the only way to reach MAG200's own content, there being no MAG201 to move to.
+  Keyboard shortcut <kbd>f</kbd>; it travels in the URL as `done=1`.
 - **Descriptors evolve too.** The one-line summary under each name is itself
   episode-tagged, so it re-words as the character changes.
 - **Cross-references** are marked separately, in amber, and gated the same way —
@@ -32,14 +41,15 @@ sealed until you move past it.
 - **Selecting a character never scrolls the page.** The position is pinned
   across the re-render.
 
-Because the gate means "currently on", MAG100's own content unlocks only once
-the archive is extended past 100 — the data for it is present and waiting.
+Because the gate means "currently on", the last episode's own content is only
+reachable by ticking **Finished it** — there is no MAG201 to move forward to.
 
 ## Using it
 
 | Action | How |
 | --- | --- |
 | Change episode | Drag the slider, click a tick number, or press <kbd>[</kbd> / <kbd>]</kbd> |
+| Unseal the current episode | Tick **Finished it**, or press <kbd>f</kbd> |
 | Search | Type in the index box, or press <kbd>/</kbd> |
 | Filter | Click the category chips |
 | Share a view | The URL hash carries both episode and character, e.g. `#ep=4/c=jurgen-leitner` |
@@ -80,9 +90,10 @@ rows.
 ```
 data/episodes.js           MAG001–010 episode index
 data/episodes-011-100.js   MAG011–100 episode index
+data/episodes-101-200.js   MAG101–200 episode index
 data/characters.js         roster: identity rows only
 data/facts/f001-010.js     episode-tagged facts, one file per block of ten
-data/facts/f011-020.js     …
+data/facts/f011-020.js     … through f191-200.js
 ```
 
 **`characters.js`** holds only identity — a character with no facts anywhere is
@@ -113,16 +124,25 @@ adding a fact — that is what drives the returning-cast highlight.
 A character's debut is computed as their lowest `ep`, so there is no separate
 field to keep in sync. Every character needs a `blurb` at or before their debut.
 
-## Adding episodes 101 and up
+## Adding more episodes
 
-1. Append the episodes to `data/episodes-011-100.js` (or a new index file).
-2. Create `data/facts/f101-110.js` following the same pattern and add a
-   `<script>` tag for it in `index.html`.
+1. Append the episodes to a new index file, e.g. `data/episodes-201-210.js`.
+2. Create `data/facts/f201-210.js` following the same pattern, and add
+   `<script>` tags for both in `index.html`.
+
+The checker reads its file list straight out of `index.html`, so a new data
+file is validated the moment the page loads it.
 
 The slider range, index, filters, ticks and statement log all derive from the
-data. There is a data-integrity checker worth running after any edit — it
-catches unregistered ids, out-of-range episodes, missing blurbs, and any fact
-that would leak past the gate.
+data. Run the checker after any edit:
+
+```bash
+node tools/check-data.js
+```
+
+It catches unregistered ids, gaps in the episode run, out-of-range episodes,
+missing descriptors at a character's debut, and any fact that could leak past
+the gate. It exits non-zero on failure.
 
 ## Sources and credit
 
