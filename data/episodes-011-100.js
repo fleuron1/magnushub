@@ -82,16 +82,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The second half of the exorcist's statement: a false Mass, and what he found when it ended."
   },
-  { num: 21, title: "Freefall" },
-  { num: 22, title: "Colony" },
-  { num: 23, title: "Schwartzwald" },
-  { num: 24, title: "Strange Music" },
-  { num: 25, title: "Growing Dark" },
-  { num: 26, title: "A Distortion" },
-  { num: 27, title: "A Sturdy Lock" },
-  { num: 28, title: "Skintight" },
-  { num: 29, title: "Cheating Death" },
-  { num: 30, title: "Killing Floor" },
+  {
+    num: 21,
+    title: "Freefall",
+    giver: "Moira Kelly",
+    given: "20 October 2002",
+    subject:
+      "A skydiver who found no ground under him, and the hillside his mother watched him leave from."
+  },
+  {
+    num: 22,
+    title: "Colony",
+    giver: "Martin Blackwood",
+    given: "12 March 2016",
+    subject:
+      "An archival assistant's own account of what he found in a basement on Boothby Road."
+  },
+  {
+    num: 23,
+    title: "Schwartzwald",
+    giver: "Albrecht von Closen",
+    given: "31 March 1816",
+    subject:
+      "A letter to Jonah Magnus about a tomb in the Black Forest and the man guarding it."
+  },
+  {
+    num: 24,
+    title: "Strange Music",
+    giver: "Leanne Denikin",
+    given: "17 January 2005",
+    subject:
+      "A calliope organ inherited with a house, and the dolls in the trunk beside it."
+  },
+  {
+    num: 25,
+    title: "Growing Dark",
+    giver: "Mark Bilham",
+    given: "19 April 2015",
+    subject:
+      "A flatmate's new congregation, and the chapel in Hither Green she joined it at."
+  },
+  {
+    num: 26,
+    title: "A Distortion",
+    giver: "Sasha James",
+    given: "2 April 2016",
+    subject:
+      "An assistant archivist's account of a tall figure with long hands that said it wanted to help."
+  },
+  {
+    num: 27,
+    title: "A Sturdy Lock",
+    giver: "Paul McKenzie",
+    given: "24 August 2003",
+    subject:
+      "Something that came to a widower's bedroom door every night and turned the handle."
+  },
+  {
+    num: 28,
+    title: "Skintight",
+    giver: "Melanie King",
+    given: "17 April 2016",
+    subject:
+      "An overnight shoot at Cambridge Military Hospital, and what the sound engineer did alone in a room."
+  },
+  {
+    num: 29,
+    title: "Cheating Death",
+    giver: "Nathaniel Thorp",
+    given: "4 June 1972",
+    subject:
+      "A card game against Death in 1775, and the two centuries that followed it."
+  },
+  {
+    num: 30,
+    title: "Killing Floor",
+    giver: "David Laylow",
+    given: "1 September 2013",
+    subject:
+      "A slaughterhouse in Dalston that stopped having the right number of corridors."
+  },
   { num: 31, title: "First Hunt" },
   { num: 32, title: "Hive" },
   { num: 33, title: "Boatswain's Call" },
