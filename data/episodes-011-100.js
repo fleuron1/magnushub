@@ -2,16 +2,86 @@
    metadata is filled in per block as the archive is written. */
 
 window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
-  { num: 11, title: "Dreamer" },
-  { num: 12, title: "First Aid" },
-  { num: 13, title: "Alone" },
-  { num: 14, title: "Piecemeal" },
-  { num: 15, title: "Lost Johns' Cave" },
-  { num: 16, title: "Arachnophobia" },
-  { num: 17, title: "The Boneturner's Tale" },
-  { num: 18, title: "The Man Upstairs" },
-  { num: 19, title: "Confession" },
-  { num: 20, title: "Desecrated Host" },
+  {
+    num: 11,
+    title: "Dreamer",
+    giver: "Antonio Blake",
+    given: "14 March 2015",
+    subject:
+      "Recurring dreams of a dark London in which people stand frozen at the moment of their deaths."
+  },
+  {
+    num: 12,
+    title: "First Aid",
+    giver: "Lesere Saraki",
+    given: "11 February 2012",
+    subject:
+      "Two men brought into A&E burned everywhere their clothes were not."
+  },
+  {
+    num: 13,
+    title: "Alone",
+    giver: "Naomi Herne",
+    given: "13 January 2016",
+    subject:
+      "A drive away from a funeral that ended in fog, an open graveyard and a road five miles from the car."
+  },
+  {
+    num: 14,
+    title: "Piecemeal",
+    giver: "Lee Rentoul",
+    given: "29 May 2011",
+    subject:
+      "A curse bought from an old woman in Bexley, and the parcels that started arriving afterwards."
+  },
+  {
+    num: 15,
+    title: "Lost Johns' Cave",
+    giver: "Laura Popham",
+    given: "9 November 2014",
+    subject:
+      "A caving trip into the Three Counties System that two sisters entered and one left."
+  },
+  {
+    num: 16,
+    title: "Arachnophobia",
+    giver: "Carlos Vittery",
+    given: "9 April 2015",
+    subject:
+      "A spider killed repeatedly by a man who was terrified of spiders."
+  },
+  {
+    num: 17,
+    title: "The Boneturner's Tale",
+    giver: "Sebastian Adekoya",
+    given: "10 June 1999",
+    subject:
+      "A book returned to Chiswick Library with a barcode matching nothing, and the man who borrowed it."
+  },
+  {
+    num: 18,
+    title: "The Man Upstairs",
+    giver: "Christof Rudenko",
+    given: "12 December 2008",
+    subject:
+      "A stain on a ceiling, and the flat it was leaking from."
+  },
+  {
+    num: 19,
+    title: "Confession",
+    giver: "Father Edwin Burroughs",
+    given: "30 May 2011",
+    subject:
+      "An exorcist's account of a failed exorcism and a house on Hill Top Road."
+  },
+  {
+    num: 20,
+    title: "Desecrated Host",
+    giver: "Father Edwin Burroughs",
+    given: "30 May 2011",
+    subject:
+      "The second half of the exorcist's statement: a false Mass, and what he found when it ended."
+  },
   { num: 21, title: "Freefall" },
   { num: 22, title: "Colony" },
   { num: 23, title: "Schwartzwald" },

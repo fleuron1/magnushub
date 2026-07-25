@@ -80,6 +80,47 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "sylvia-mcdonald", name: "Sylvia McDonald", category: "Unexplained" },
   { id: "nigel-herbert", name: "Nigel Herbert", category: "Subject" },
   { id: "robert-arden", name: "Robert Arden", category: "Unexplained" },
-  { id: "alard-dupont", name: "Alard Dupont", category: "Subject" }
+  { id: "alard-dupont", name: "Alard Dupont", category: "Subject" },
+
+  /* -- MAG011–020 ------------------------------------------------------ */
+  { id: "elias-bouchard", name: "Elias Bouchard", category: "Institute" },
+  { id: "rosie", name: "Rosie", category: "Institute" },
+  { id: "lukas-family", name: "The Lukas family", category: "Organisation" },
+
+  { id: "antonio-blake", name: "Antonio Blake", category: "Statement Giver",
+    statement: { ep: 11, ref: "MAG011 — Dreamer", given: "14 March 2015" } },
+  { id: "lesere-saraki", name: "Lesere Saraki", category: "Statement Giver",
+    statement: { ep: 12, ref: "MAG012 — First Aid", given: "11 February 2012" } },
+  { id: "naomi-herne", name: "Naomi Herne", category: "Statement Giver",
+    statement: { ep: 13, ref: "MAG013 — Alone", given: "13 January 2016" } },
+  { id: "lee-rentoul", name: "Lee Rentoul", category: "Statement Giver",
+    statement: { ep: 14, ref: "MAG014 — Piecemeal", given: "29 May 2011" } },
+  { id: "laura-popham", name: "Laura Popham", category: "Statement Giver",
+    statement: { ep: 15, ref: "MAG015 — Lost Johns' Cave", given: "9 November 2014" } },
+  { id: "carlos-vittery", name: "Carlos Vittery", category: "Statement Giver",
+    statement: { ep: 16, ref: "MAG016 — Arachnophobia", given: "9 April 2015" } },
+  { id: "sebastian-adekoya", name: "Sebastian Adekoya", category: "Statement Giver",
+    statement: { ep: 17, ref: "MAG017 — The Boneturner's Tale", given: "10 June 1999" } },
+  { id: "christof-rudenko", name: "Christof Rudenko", category: "Statement Giver",
+    statement: { ep: 18, ref: "MAG018 — The Man Upstairs", given: "12 December 2008" } },
+
+  { id: "john-uzel", name: "John Uzel", category: "Subject" },
+  { id: "the-burned-man", name: "The burning man at St Thomas'", category: "Unexplained" },
+  { id: "kayleigh-grice", name: "Dr Kayleigh Grice", category: "Subject" },
+  { id: "evan-lukas", name: "Evan Lukas", category: "Subject" },
+  { id: "paul-noriega", name: "Paul Noriega", category: "Subject" },
+  { id: "angela", name: "Angela", category: "Unexplained" },
+  { id: "toby-mcmullen", name: "Toby McMullen", category: "Subject" },
+  { id: "salesa", name: "Salesa", category: "Subject" },
+  { id: "alena-sanderson", name: "Alena Sanderson", category: "Subject" },
+  { id: "the-spider", name: "The spider", category: "Unexplained" },
+  { id: "boneturners-tale", name: "The Boneturner's Tale", category: "Unexplained" },
+  { id: "jared-hopworth", name: "Jared Hopworth", category: "Subject" },
+  { id: "toby-carlisle", name: "Toby Carlisle", category: "Subject" },
+  { id: "bethany-oconnor", name: "Bethany O'Connor", category: "Subject" },
+  { id: "anne-willett", name: "Anne Willett", category: "Subject" },
+  { id: "christopher-bilham", name: "Christopher Bilham", category: "Subject" },
+  { id: "james-mann", name: "James Mann", category: "Subject" },
+  { id: "the-altar-server", name: "The altar server", category: "Unexplained" }
 
 ]);
