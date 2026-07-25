@@ -457,6 +457,36 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "mechanical-turk", name: "The Mechanical Turk", category: "Unexplained" },
   { id: "the-slaughter", name: "The Slaughter", category: "Unexplained" },
   { id: "house-of-wax", name: "The House of Wax", category: "Organisation" },
-  { id: "martins-mother", name: "Martin's mother", category: "Subject" }
+  { id: "martins-mother", name: "Martin's mother", category: "Subject" },
+
+  /* -- MAG121–130 ------------------------------------------------------ */
+  { id: "lorell-st-john", name: "Lorell St John", category: "Statement Giver",
+    statement: { ep: 122, ref: "MAG122 — Zombie", given: "1 February 2015" } },
+  { id: "angie-santos", name: "Angie Santos", category: "Statement Giver",
+    statement: { ep: 123, ref: "MAG123 — Web Development", given: "1 August 2015" } },
+  { id: "julian-jennings", name: "Julian Jennings", category: "Statement Giver",
+    statement: { ep: 124, ref: "MAG124 — Left Hanging", given: "11 December 2012" } },
+  { id: "terrance-simpson", name: "Sergeant Terrance Simpson", category: "Statement Giver",
+    statement: { ep: 125, ref: "MAG125 — Civilian Casualties", given: "19 July 1993" } },
+  { id: "deborah-madaki", name: "Deborah Madaki", category: "Statement Giver",
+    statement: { ep: 126, ref: "MAG126 — Sculptor's Tool", given: "11 October 2009" } },
+  { id: "jonathan-fanshawe", name: "Dr Jonathan Fanshawe", category: "Statement Giver",
+    statement: { ep: 127, ref: "MAG127 — Remains to be Seen", given: "21 November 1831" } },
+  { id: "kulbir-shakya", name: "Kulbir Shakya", category: "Statement Giver",
+    statement: { ep: 129, ref: "MAG129 — Submerged", given: "4 September 2013" } },
+  { id: "lucia-wright", name: "Lucia Wright", category: "Statement Giver",
+    statement: { ep: 130, ref: "MAG130 — Meat", given: "19 December 2008" } },
+
+  { id: "thomas-pritchard", name: "Dr Thomas Pritchard", category: "Subject" },
+  { id: "point-nemo", name: "Point Nemo", category: "Unexplained" },
+  { id: "gregory-cox", name: "Gregory Cox", category: "Subject" },
+  { id: "chelicerae", name: "Chelicerae", category: "Unexplained" },
+  { id: "otto-hessler", name: "Otto Hessler", category: "Subject" },
+  { id: "callum-mckenzie", name: "Callum McKenzie", category: "Subject" },
+  { id: "worker-in-clay", name: "The Worker in Clay", category: "Unexplained" },
+  { id: "mary-randall", name: "Mary Randall", category: "Subject" },
+  { id: "eberhart-and-strauss", name: "Eberhart and Strauss", category: "Organisation" },
+  { id: "the-last-feast", name: "The Last Feast", category: "Unexplained" },
+  { id: "the-flesh", name: "The Flesh", category: "Unexplained" }
 
 ]);

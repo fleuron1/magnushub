@@ -162,16 +162,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "What the Archivist dreams, narrated over his hospital bed."
   },
-  { num: 121, title: "Far Away" },
-  { num: 122, title: "Zombie" },
-  { num: 123, title: "Web Development" },
-  { num: 124, title: "Left Hanging" },
-  { num: 125, title: "Civilian Casualties" },
-  { num: 126, title: "Sculptor's Tool" },
-  { num: 127, title: "Remains to be Seen" },
-  { num: 128, title: "Heavy Goods" },
-  { num: 129, title: "Submerged" },
-  { num: 130, title: "Meat" },
+  {
+    num: 121,
+    title: "Far Away",
+    giver: "Oliver Banks",
+    given: "9 January 2019",
+    subject:
+      "A decade of seeing death coming, and a voyage to the emptiest place in the ocean."
+  },
+  {
+    num: 122,
+    title: "Zombie",
+    giver: "Lorell St John",
+    given: "1 February 2015",
+    subject:
+      "A woman who became convinced the people around her were hollow."
+  },
+  {
+    num: 123,
+    title: "Web Development",
+    giver: "Angie Santos",
+    given: "1 August 2015",
+    subject:
+      "A website built to a stranger's specification, and the code she kept sending."
+  },
+  {
+    num: 124,
+    title: "Left Hanging",
+    giver: "Julian Jennings",
+    given: "11 December 2012",
+    subject:
+      "A stalled cable car on the Untersberg, and the passenger who jumped."
+  },
+  {
+    num: 125,
+    title: "Civilian Casualties",
+    giver: "Sergeant Terrance Simpson",
+    given: "19 July 1993",
+    subject:
+      "A call-out to a crofting community where everyone had killed each other."
+  },
+  {
+    num: 126,
+    title: "Sculptor's Tool",
+    giver: "Deborah Madaki",
+    given: "11 October 2009",
+    subject:
+      "An evening sculpting class, and the student whose clay moved."
+  },
+  {
+    num: 127,
+    title: "Remains to be Seen",
+    giver: "Dr Jonathan Fanshawe",
+    given: "21 November 1831",
+    subject:
+      "A physician sent by Jonah Magnus, and the autopsy he performed afterwards."
+  },
+  {
+    num: 128,
+    title: "Heavy Goods",
+    giver: "Breekon",
+    given: "3 March 2018",
+    subject:
+      "The surviving deliveryman, with one last delivery to make."
+  },
+  {
+    num: 129,
+    title: "Submerged",
+    giver: "Kulbir Shakya",
+    given: "4 September 2013",
+    subject:
+      "A letter about unpaid debts, and the flood that followed it home."
+  },
+  {
+    num: 130,
+    title: "Meat",
+    giver: "Lucia Wright",
+    given: "19 December 2008",
+    subject:
+      "A temple in Istanbul, and the pit they made her feed."
+  },
   { num: 131, title: "Flesh" },
   { num: 132, title: "Entombed" },
   { num: 133, title: "Dead Horse" },
