@@ -574,6 +574,16 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "the-great-beast", name: "The Great Beast", category: "Unexplained" },
   { id: "wonderland-house", name: "Wonderland House", category: "Unexplained" },
   { id: "noah-thomson", name: "Noah Thomson", category: "Subject" },
-  { id: "upton-house", name: "Upton House", category: "Unexplained" }
+  { id: "upton-house", name: "Upton House", category: "Unexplained" },
+
+  /* -- MAG181–190 ------------------------------------------------------ */
+  { id: "the-camera", name: "Salesa's camera", category: "Unexplained" },
+  { id: "jane-doe", name: "Dr Jane Doe", category: "Unexplained" },
+  { id: "st-bleedings", name: "St Bleedings Centre for Wellbeing", category: "Unexplained" },
+  { id: "martins-domain", name: "Martin's domain", category: "Unexplained" },
+  { id: "the-monument", name: "The Monument", category: "Unexplained" },
+  { id: "inspector-547", name: "Inspector 547", category: "Subject" },
+  { id: "celia", name: "Celia", category: "Subject" },
+  { id: "the-refuge", name: "The tunnels refuge", category: "Organisation" }
 
 ]);

@@ -642,16 +642,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A cemetery above ground, and a country house that should not be standing."
   },
-  { num: 181, title: "Ignorance" },
-  { num: 182, title: "Wellbeing" },
-  { num: 183, title: "Monument" },
-  { num: 184, title: "Like Ants" },
-  { num: 185, title: "Locked In" },
-  { num: 186, title: "Quiet" },
-  { num: 187, title: "Checking Out" },
-  { num: 188, title: "Centre of Attention" },
-  { num: 189, title: "Peers" },
-  { num: 190, title: "Scavengers" },
+  {
+    num: 181,
+    title: "Ignorance",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Days inside the one house the Eye cannot see, and what leaving it costs."
+  },
+  {
+    num: 182,
+    title: "Wellbeing",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A hospital of four hundred theatres, and a janitor who wants to stop."
+  },
+  {
+    num: 183,
+    title: "Monument",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A building that will not hold still, and the news that Martin has a domain."
+  },
+  {
+    num: 184,
+    title: "Like Ants",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "An ant colony that is its own avatar, and a debt the Archivist pays badly."
+  },
+  {
+    num: 185,
+    title: "Locked In",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A prison with no stated charge, inside Martin's own domain."
+  },
+  {
+    num: 186,
+    title: "Quiet",
+    giver: "Martin Blackwood",
+    given: "Post-Change",
+    subject:
+      "Martin walks his domain alone and argues with himself about it."
+  },
+  {
+    num: 187,
+    title: "Checking Out",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Helen's hotel, and the lie the Archivist takes her apart with."
+  },
+  {
+    num: 188,
+    title: "Centre of Attention",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "London under the Eye, where being looked at is the whole of it."
+  },
+  {
+    num: 189,
+    title: "Peers",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "The tower of mirrored glass, and the people who pull him away from it."
+  },
+  {
+    num: 190,
+    title: "Scavengers",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "The tunnels under London, and the survivors Georgie and Melanie are keeping alive."
+  },
   { num: 191, title: "What We Lose" },
   { num: 192, title: "An Appointment" },
   { num: 193, title: "A Stern Look" },
