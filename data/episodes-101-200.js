@@ -482,16 +482,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The statement that was the plan, and the words at the end of it."
   },
-  { num: 161, title: "Dwelling" },
-  { num: 162, title: "A Cozy Cabin" },
-  { num: 163, title: "In the Trenches" },
-  { num: 164, title: "The Sick Village" },
-  { num: 165, title: "Revolutions" },
-  { num: 166, title: "The Worms" },
-  { num: 167, title: "Curiosity" },
-  { num: 168, title: "Roots" },
-  { num: 169, title: "Fire Escape" },
-  { num: 170, title: "Recollection" },
+  {
+    num: 161,
+    title: "Dwelling",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A cottage in Scotland, an old birthday tape, and a world too loud to walk into."
+  },
+  {
+    num: 162,
+    title: "A Cozy Cabin",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "The cabin turns out to be keeping them, and they leave anyway."
+  },
+  {
+    num: 163,
+    title: "In the Trenches",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A domain of the Slaughter: a war with no sides and no end."
+  },
+  {
+    num: 164,
+    title: "The Sick Village",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A plague village that burns the uninfected as proof they came from outside."
+  },
+  {
+    num: 165,
+    title: "Revolutions",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A carousel where faces and names are taken and handed to somebody else."
+  },
+  {
+    num: 166,
+    title: "The Worms",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Tunnels the width of a body, and the light that never gets nearer."
+  },
+  {
+    num: 167,
+    title: "Curiosity",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "Gertrude Robinson's whole tenure, and what she did with her assistants."
+  },
+  {
+    num: 168,
+    title: "Roots",
+    giver: "Oliver Banks",
+    given: "Post-Change",
+    subject:
+      "A coroner's report from the Corpse Routes, and the end of the powers themselves."
+  },
+  {
+    num: 169,
+    title: "Fire Escape",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A burning tower block where nothing works, and the woman who owns it."
+  },
+  {
+    num: 170,
+    title: "Recollection",
+    giver: "Martin Blackwood",
+    given: "Post-Change",
+    subject:
+      "A house full of fog, recorded by someone who keeps forgetting he is recording."
+  },
   { num: 171, title: "The Gardener" },
   { num: 172, title: "Strung Out" },
   { num: 173, title: "Night Night" },

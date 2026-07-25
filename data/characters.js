@@ -559,6 +559,14 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "the-corruption", name: "The Corruption", category: "Unexplained" },
   { id: "bright-lake", name: "Bright Lake", category: "Unexplained" },
   { id: "the-panopticon", name: "The Panopticon", category: "Unexplained" },
-  { id: "the-change", name: "The Change", category: "Unexplained" }
+  { id: "the-change", name: "The Change", category: "Unexplained" },
+
+  /* -- MAG161–170 ------------------------------------------------------ */
+  { id: "the-safehouse", name: "The safehouse", category: "Unexplained" },
+  { id: "the-trenches", name: "The Trenches", category: "Unexplained" },
+  { id: "jillian-smith", name: "Jillian Smith", category: "Subject" },
+  { id: "emma-harvey", name: "Emma Harvey", category: "Institute" },
+  { id: "corpse-routes", name: "The Corpse Routes", category: "Unexplained" },
+  { id: "danika-gelsthorpe", name: "Danika Gelsthorpe", category: "Subject" }
 
 ]);
