@@ -64,6 +64,10 @@ window.TMA_FACTS = (window.TMA_FACTS || []).concat([
 {c:"wonderland-house",ep:177,t:"A domain built on the fear of not being believed: a doctor who denies each symptom, alters medication, and insists the patient is well."},
 
 {c:"daisy-tonner",ep:177,t:"She is in this domain and she has been killing. Her victims are people with criminal records she knew."},
+
+{c:"noah-thomson",ep:177,k:"blurb",t:"Killed by Daisy in the Spiral's hospital. Basira knew his record."},
+{c:"noah-thomson",ep:177,t:"Found dead in Wonderland House, killed by Daisy. Basira knew him as a criminal from her policing days."},
+{c:"noah-thomson",ep:177,t:"The Archivist's point is that he was not there by chance — which raises what Daisy is actually choosing."},
 {c:"basira-hussain",ep:177,t:"Is hunting Daisy to keep a promise, and will not engage with the suggestion that Daisy is choosing her targets."},
 {c:"helen-richardson",ep:177,t:"Offers Basira a shortcut to Daisy. Basira refuses it."},
 {c:"jonathan-sims",ep:177,t:"Cannot see Georgie or Melanie at all. Something is hiding them."},
