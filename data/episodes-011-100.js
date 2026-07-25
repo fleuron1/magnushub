@@ -402,16 +402,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A mirror unwrapped from a dead man's estate, and the face that was in it."
   },
-  { num: 61, title: "Hard Shoulder" },
-  { num: 62, title: "First Edition" },
-  { num: 63, title: "The End of the Tunnel" },
-  { num: 64, title: "Burial Rites" },
-  { num: 65, title: "Binary" },
-  { num: 66, title: "Held In Customs" },
-  { num: 67, title: "Burning Desire" },
-  { num: 68, title: "The Tale of a Field Hospital" },
-  { num: 69, title: "Thought for the Day" },
-  { num: 70, title: "Book of the Dead" },
+  {
+    num: 61,
+    title: "Hard Shoulder",
+    giver: "Alice \"Daisy\" Tonner",
+    given: "1 December 2016",
+    subject:
+      "A traffic stop on the M6 in 2002, and the coffin in the back of the van."
+  },
+  {
+    num: 62,
+    title: "First Edition",
+    giver: "Mary Keay",
+    given: "3 July 2008",
+    subject:
+      "The first Leitner she ever handled, taken off a Whitechapel GP in 1955."
+  },
+  {
+    num: 63,
+    title: "The End of the Tunnel",
+    giver: "Erin Gallagher-Nelson",
+    given: "31 March 2014",
+    subject:
+      "Victorian tunnels under a Hackney church, and the shadows that got closer each frame."
+  },
+  {
+    num: 64,
+    title: "Burial Rites",
+    giver: "Donna Gwynne",
+    given: "20 May 2015",
+    subject:
+      "An illegal dig in the Eastern Desert, and the thing in the sarcophagus."
+  },
+  {
+    num: 65,
+    title: "Binary",
+    giver: "Tessa Winters",
+    given: "7 January 2017",
+    subject:
+      "An executable named after a dead programmer, and the seventeen hours after running it."
+  },
+  {
+    num: 66,
+    title: "Held In Customs",
+    giver: "Vincent Yang",
+    given: "22 February 2000",
+    subject:
+      "A customs inspection of Mikaele Salesa's cargo, and the crate it ended in."
+  },
+  {
+    num: 67,
+    title: "Burning Desire",
+    giver: "Jack Barnabas",
+    given: "18 March 2007",
+    subject:
+      "A few dates with a woman who had used the same cafe for fifteen years without ageing."
+  },
+  {
+    num: 68,
+    title: "The Tale of a Field Hospital",
+    giver: "Joseph Russo",
+    given: "3 June 2003",
+    subject:
+      "A Boer War memoir found at a tip, containing a soldier who is in no other edition."
+  },
+  {
+    num: 69,
+    title: "Thought for the Day",
+    giver: "Darren Harlow",
+    given: "18 November 2010",
+    subject:
+      "A university experiment in transmitting fear, and the subject behind the glass."
+  },
+  {
+    num: 70,
+    title: "Book of the Dead",
+    giver: "Masato Murray",
+    given: "9 December 2003",
+    subject:
+      "An inherited book that lists deaths, including the reader's own."
+  },
   { num: 71, title: "Underground" },
   { num: 72, title: "Takeaway" },
   { num: 73, title: "Police Lights" },

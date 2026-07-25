@@ -276,6 +276,37 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "tom", name: "Tom", category: "Unexplained" },
   { id: "eustace-wick", name: "Eustace Wick", category: "Unexplained" },
   { id: "benjamin-carlisle", name: "Benjamin Carlisle", category: "Subject" },
-  { id: "christopher-meyer", name: "Christopher Meyer", category: "Subject" }
+  { id: "christopher-meyer", name: "Christopher Meyer", category: "Subject" },
+
+  /* -- MAG061–070 ------------------------------------------------------ */
+  { id: "erin-gallagher-nelson", name: "Erin Gallagher-Nelson", category: "Statement Giver",
+    statement: { ep: 63, ref: "MAG063 — The End of the Tunnel", given: "31 March 2014" } },
+  { id: "donna-gwynne", name: "Donna Gwynne", category: "Statement Giver",
+    statement: { ep: 64, ref: "MAG064 — Burial Rites", given: "20 May 2015" } },
+  { id: "tessa-winters", name: "Tessa Winters", category: "Statement Giver",
+    statement: { ep: 65, ref: "MAG065 — Binary", given: "7 January 2017" } },
+  { id: "vincent-yang", name: "Vincent Yang", category: "Statement Giver",
+    statement: { ep: 66, ref: "MAG066 — Held In Customs", given: "22 February 2000" } },
+  { id: "jack-barnabas", name: "Jack Barnabas", category: "Statement Giver",
+    statement: { ep: 67, ref: "MAG067 — Burning Desire", given: "18 March 2007" } },
+  { id: "joseph-russo", name: "Joseph Russo", category: "Statement Giver",
+    statement: { ep: 68, ref: "MAG068 — The Tale of a Field Hospital", given: "3 June 2003" } },
+  { id: "darren-harlow", name: "Darren Harlow", category: "Statement Giver",
+    statement: { ep: 69, ref: "MAG069 — Thought for the Day", given: "18 November 2010" } },
+  { id: "masato-murray", name: "Masato Murray", category: "Statement Giver",
+    statement: { ep: 70, ref: "MAG070 — Book of the Dead", given: "9 December 2003" } },
+
+  { id: "isaac-masters", name: "Isaac Masters", category: "Subject" },
+  { id: "margaret-tellison", name: "Dr Margaret Tellison", category: "Subject" },
+  { id: "luke-nelson", name: "Luke Nelson", category: "Subject" },
+  { id: "sergey-ushanka", name: "Sergey Ushanka", category: "Unexplained" },
+  { id: "lightless-flame", name: "The Cult of the Lightless Flame", category: "Organisation" },
+  { id: "deliah-aconjo", name: "Deliah Aconjo", category: "Subject" },
+  { id: "private-amherst", name: "Private Amherst", category: "Unexplained" },
+  { id: "frederick-treeves", name: "Frederick Treeves", category: "Subject" },
+  { id: "annabelle-cane", name: "Annabelle Cane", category: "Unexplained" },
+  { id: "elizabeth-bates", name: "Dr Elizabeth Bates", category: "Subject" },
+  { id: "book-of-the-dead", name: "The book of the dead", category: "Unexplained" },
+  { id: "philip-doah", name: "Philip Doah", category: "Subject" }
 
 ]);
