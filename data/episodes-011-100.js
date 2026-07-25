@@ -162,16 +162,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A slaughterhouse in Dalston that stopped having the right number of corridors."
   },
-  { num: 31, title: "First Hunt" },
-  { num: 32, title: "Hive" },
-  { num: 33, title: "Boatswain's Call" },
-  { num: 34, title: "Anatomy Class" },
-  { num: 35, title: "Old Passages" },
-  { num: 36, title: "Taken Ill" },
-  { num: 37, title: "Burnt Offering" },
-  { num: 38, title: "Lost and Found" },
-  { num: 39, title: "Infestation" },
-  { num: 40, title: "Human Remains" },
+  {
+    num: 31,
+    title: "First Hunt",
+    giver: "Lawrence Mortimer",
+    given: "9 December 2010",
+    subject:
+      "A hunting trip on the Blue Ridge, and the hiker the hunters passed on the trail."
+  },
+  {
+    num: 32,
+    title: "Hive",
+    giver: "Jane Prentiss",
+    given: "23 February 2014",
+    subject:
+      "The wasps' nest in her attic, in her own words, two years before the Archive met her."
+  },
+  {
+    num: 33,
+    title: "Boatswain's Call",
+    giver: "Carlita Sloane",
+    given: "2 January 2011",
+    subject:
+      "A berth aboard the Tundra, a ship whose containers were all empty."
+  },
+  {
+    num: 34,
+    title: "Anatomy Class",
+    giver: "Dr Lionel Elliott",
+    given: "12 July 2016",
+    subject:
+      "Seven anatomy students with placeholder names, learning what people are made of."
+  },
+  {
+    num: 35,
+    title: "Old Passages",
+    giver: "Harold Silvana",
+    given: "4 June 2002",
+    subject:
+      "A hidden wall in the Reform Club basement, and the tunnels behind it."
+  },
+  {
+    num: 36,
+    title: "Taken Ill",
+    giver: "Nicole Baxter",
+    given: "19 November 2012",
+    subject:
+      "A body collected from Ivy Meadows that had decayed too far, too fast."
+  },
+  {
+    num: 37,
+    title: "Burnt Offering",
+    giver: "Jason North",
+    given: "6 August 2009",
+    subject:
+      "A clearing near Loch Glass, and the bottles hanging in the trees around it."
+  },
+  {
+    num: 38,
+    title: "Lost and Found",
+    giver: "Andre Ramao",
+    given: "6 June 2012",
+    subject:
+      "A vase bought from Mikaele Salesa, and everything that stopped having existed."
+  },
+  {
+    num: 39,
+    title: "Infestation",
+    giver: "The Archive staff",
+    given: "29 July 2016",
+    subject:
+      "Jane Prentiss reaches the Institute. Recorded as it happened."
+  },
+  {
+    num: 40,
+    title: "Human Remains",
+    giver: "The Archive staff",
+    given: "29 July 2016",
+    subject:
+      "The aftermath, in five accounts — and what was found in the tunnels underneath."
+  },
   { num: 41, title: "Too Deep" },
   { num: 42, title: "Grifter's Bone" },
   { num: 43, title: "Section 31" },
