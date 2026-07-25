@@ -436,6 +436,27 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "david-austin", name: "David Austin", category: "Subject" },
   { id: "dexter-banks", name: "Dexter Banks", category: "Subject" },
   { id: "neil-lagorio", name: "Neil Lagorio", category: "Subject" },
-  { id: "vardhan-darvish", name: "Vardhan Darvish", category: "Unexplained" }
+  { id: "vardhan-darvish", name: "Vardhan Darvish", category: "Unexplained" },
+
+  /* -- MAG111–120 ------------------------------------------------------ */
+  { id: "lisa-carmel", name: "Lisa Carmel", category: "Statement Giver",
+    statement: { ep: 112, ref: "MAG112 — Thrill of the Chase", given: "13 November 2011" } },
+  { id: "anya-villette", name: "Anya Villette", category: "Statement Giver",
+    statement: { ep: 114, ref: "MAG114 — Cracked Foundation", given: "22 April 2009" } },
+  { id: "abraham-janssen", name: "Abraham Janssen", category: "Statement Giver",
+    statement: { ep: 116, ref: "MAG116 — The Show Must Go On", given: "2 November 1787" } },
+
+  { id: "the-fourteen", name: "The fourteen fears", category: "Unexplained" },
+  { id: "murder-club", name: "Murder Club", category: "Organisation" },
+  { id: "ananya-kaleka", name: "Ananya Kaleka", category: "Subject" },
+  { id: "justin-gough", name: "Justin Gough", category: "Unexplained" },
+  { id: "george-icarus", name: "George Icarus", category: "Subject" },
+  { id: "the-cook", name: "Cook", category: "Unexplained" },
+  { id: "the-meat-grinder", name: "The meat grinder", category: "Unexplained" },
+  { id: "wolfgang-von-kempelen", name: "Wolfgang von Kempelen", category: "Subject" },
+  { id: "mechanical-turk", name: "The Mechanical Turk", category: "Unexplained" },
+  { id: "the-slaughter", name: "The Slaughter", category: "Unexplained" },
+  { id: "house-of-wax", name: "The House of Wax", category: "Organisation" },
+  { id: "martins-mother", name: "Martin's mother", category: "Subject" }
 
 ]);
