@@ -50,17 +50,15 @@ python3 -m http.server 8000
 
 ## Publishing to GitHub Pages
 
-The site is plain static files at the repository root, so Pages needs no
-configuration beyond being switched on:
+The site is plain static files at the repository root. The workflow at
+`.github/workflows/pages.yml` deploys it on every push to `main` and switches
+Pages on itself the first time it runs, so no manual setup is needed. The site
+is served at `https://fleuron1.github.io/magnushub/`.
 
-1. **Settings → Pages**
-2. **Source: Deploy from a branch**
-3. Branch `main`, folder `/ (root)` → **Save**
-
-It will be served at `https://fleuron1.github.io/magnushub/` within a minute or
-two. A workflow at `.github/workflows/pages.yml` is also included if you would
-rather deploy through GitHub Actions — for that, set **Source: GitHub Actions**
-instead.
+If your account or organisation restricts Actions from enabling Pages, turn it
+on by hand instead — **Settings → Pages → Source: Deploy from a branch**, branch
+`main`, folder `/ (root)` — which serves the same files without using the
+workflow at all.
 
 ## Extending past episode 10
 

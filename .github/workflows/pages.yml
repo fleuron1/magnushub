@@ -23,7 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # enablement lets the first run turn Pages on itself; without it the
+      # action 404s on a repo where Pages has never been configured.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
