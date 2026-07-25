@@ -402,16 +402,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A housing estate whose roads had suffixes but no names."
   },
-  { num: 151, title: "Big Picture" },
-  { num: 152, title: "A Gravedigger's Envy" },
-  { num: 153, title: "Love Bombing" },
-  { num: 154, title: "Bloody Mary" },
-  { num: 155, title: "Cost of Living" },
-  { num: 156, title: "Reflection" },
-  { num: 157, title: "Rotten Core" },
-  { num: 158, title: "Panopticon" },
-  { num: 159, title: "The Last" },
-  { num: 160, title: "The Eye Opens" },
+  {
+    num: 151,
+    title: "Big Picture",
+    giver: "Simon Fairchild",
+    given: "29 August 2019",
+    subject:
+      "An avatar of the Vast answers Martin's questions, at Peter Lukas's request."
+  },
+  {
+    num: 152,
+    title: "A Gravedigger's Envy",
+    giver: "Hezekiah Wakely",
+    given: "1837-1839",
+    subject:
+      "Letters from a gravedigger who found the graves comfortable."
+  },
+  {
+    num: 153,
+    title: "Love Bombing",
+    giver: "Barbara Mullen-Jones",
+    given: "2 April 2012",
+    subject:
+      "A meditation group, a compound in Arkansas, and the Eleventh."
+  },
+  {
+    num: 154,
+    title: "Bloody Mary",
+    giver: "Eric Delano",
+    given: "21 July 2008",
+    subject:
+      "How one assistant got out of the Archives, and what it cost him."
+  },
+  {
+    num: 155,
+    title: "Cost of Living",
+    giver: "Tova McHugh",
+    given: "3 December 2002",
+    subject:
+      "A philanthropist who survives by giving their deaths to other people."
+  },
+  {
+    num: 156,
+    title: "Reflection",
+    giver: "Adelard Dekker",
+    given: "4 January 2009",
+    subject:
+      "A hall of mirrors in a closed amusement park in Colorado."
+  },
+  {
+    num: 157,
+    title: "Rotten Core",
+    giver: "Adelard Dekker",
+    given: "14 August 2013",
+    subject:
+      "A quarantined town in Germany, and what was sitting at the centre of it."
+  },
+  {
+    num: 158,
+    title: "Panopticon",
+    giver: "No statement",
+    given: "17 October 2019",
+    subject:
+      "The Panopticon, and what has been under the Institute the whole time."
+  },
+  {
+    num: 159,
+    title: "The Last",
+    giver: "Peter Lukas",
+    given: "25 September 2018",
+    subject:
+      "Extracted in the Lonely, from a man who did not survive giving it."
+  },
+  {
+    num: 160,
+    title: "The Eye Opens",
+    giver: "Jonah Magnus",
+    given: "October 2019",
+    subject:
+      "The statement that was the plan, and the words at the end of it."
+  },
   { num: 161, title: "Dwelling" },
   { num: 162, title: "A Cozy Cabin" },
   { num: 163, title: "In the Trenches" },

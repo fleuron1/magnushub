@@ -541,6 +541,24 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "samson-stiller", name: "Samson Stiller", category: "Unexplained" },
   { id: "nikos-anastos", name: "Dr Nikos Anastos", category: "Subject" },
   { id: "fernanda-mikado", name: "Fernanda Mikado", category: "Subject" },
-  { id: "yotunde-uthman", name: "Yotunde Uthman", category: "Subject" }
+  { id: "yotunde-uthman", name: "Yotunde Uthman", category: "Subject" },
+
+  /* -- MAG151–160 ------------------------------------------------------ */
+  { id: "hezekiah-wakely", name: "Hezekiah Wakely", category: "Statement Giver",
+    statement: { ep: 152, ref: "MAG152 — A Gravedigger's Envy", given: "1837–1839" } },
+  { id: "barbara-mullen-jones", name: "Barbara Mullen-Jones", category: "Statement Giver",
+    statement: { ep: 153, ref: "MAG153 — Love Bombing", given: "2 April 2012" } },
+  { id: "tova-mchugh", name: "Tova McHugh", category: "Statement Giver",
+    statement: { ep: 155, ref: "MAG155 — Cost of Living", given: "3 December 2002" } },
+
+  { id: "the-vast", name: "The Vast", category: "Unexplained" },
+  { id: "nathaniel-beale", name: "Nathaniel Beale", category: "Subject" },
+  { id: "claude-vilakazi", name: "Claude Vilakazi", category: "Subject" },
+  { id: "divine-chain", name: "The Divine Chain", category: "Organisation" },
+  { id: "james-wright", name: "James Wright", category: "Institute" },
+  { id: "the-corruption", name: "The Corruption", category: "Unexplained" },
+  { id: "bright-lake", name: "Bright Lake", category: "Unexplained" },
+  { id: "the-panopticon", name: "The Panopticon", category: "Unexplained" },
+  { id: "the-change", name: "The Change", category: "Unexplained" }
 
 ]);
