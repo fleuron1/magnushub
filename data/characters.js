@@ -369,6 +369,42 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "the-dig-book", name: "The DIG book", category: "Unexplained" },
   { id: "the-desolation", name: "The Desolation", category: "Unexplained" },
   { id: "nicholas-tregenza", name: "Nicholas Tregenza", category: "Subject" },
-  { id: "marie-balandin", name: "Marie Balandin", category: "Subject" }
+  { id: "marie-balandin", name: "Marie Balandin", category: "Subject" },
+
+  /* -- MAG091–100 ------------------------------------------------------ */
+  { id: "barnabas-bennett", name: "Barnabas Bennett", category: "Statement Giver",
+    statement: { ep: 92, ref: "MAG092 — Nothing Beside Remains", given: "9 April 1824" } },
+  { id: "lester-chang", name: "Lester Chang", category: "Statement Giver",
+    statement: { ep: 93, ref: "MAG093 — Contaminant", given: "5 March 1995" } },
+  { id: "luca-moretti", name: "Luca Moretti", category: "Statement Giver",
+    statement: { ep: 95, ref: "MAG095 — Absent Without Leave", given: "2 November 1977" } },
+  { id: "alfred-breekon", name: "Alfred Breekon", category: "Statement Giver",
+    statement: { ep: 96, ref: "MAG096 — Return to Sender", given: "15 May 1996" } },
+  { id: "jackson-ellis", name: "Jackson Ellis", category: "Statement Giver",
+    statement: { ep: 97, ref: "MAG097 — We All Ignore the Pit", given: "3 March 2009" } },
+  { id: "algernon-moss", name: "Dr Algernon Moss", category: "Statement Giver",
+    statement: { ep: 98, ref: "MAG098 — Lights Out", given: "14 May 1864" } },
+  { id: "robert-geiger", name: "Robert E. Geiger", category: "Statement Giver",
+    statement: { ep: 99, ref: "MAG099 — Dust to Dust", given: "20 February 1952" } },
+  { id: "lynne-hammond", name: "Lynne Hammond", category: "Statement Giver",
+    statement: { ep: 100, ref: "MAG100 — I Guess You Had To Be There", given: "2 May 2017" } },
+  { id: "robin-lennox", name: "Robin Lennox", category: "Statement Giver",
+    statement: { ep: 100, ref: "MAG100 — I Guess You Had To Be There", given: "20 May 2017" } },
+  { id: "brian-finlinson", name: "Brian Finlinson", category: "Statement Giver",
+    statement: { ep: 100, ref: "MAG100 — I Guess You Had To Be There", given: "26 May 2017" } },
+
+  { id: "mordechai-lukas", name: "Mordechai Lukas", category: "Subject" },
+  { id: "greg-russell", name: "Greg Russell", category: "Subject" },
+  { id: "alex-brooke", name: "Alex Brooke", category: "Subject" },
+  { id: "the-end", name: "The End", category: "Unexplained" },
+  { id: "antonio-cannavaro", name: "Antonio Cannavaro", category: "Subject" },
+  { id: "nikola-orsinov", name: "Nikola Orsinov", category: "Unexplained" },
+  { id: "the-buried", name: "The Buried", category: "Unexplained" },
+  { id: "the-lonely", name: "The Lonely", category: "Unexplained" },
+  { id: "tommy-krycek", name: "Tommy Krycek", category: "Subject" },
+  { id: "bucoda-pit", name: "The pit at Bucoda", category: "Unexplained" },
+  { id: "the-sandman", name: "The Sandman", category: "Unexplained" },
+  { id: "stefan-brotchen", name: "Stefan Brotchen", category: "Subject" },
+  { id: "harry-eisenhard", name: "Harry Eisenhard", category: "Subject" }
 
 ]);

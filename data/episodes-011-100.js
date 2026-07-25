@@ -642,14 +642,84 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A private gym in Aberdeen with excellent equipment and no other members."
   },
-  { num: 91, title: "The Coming Storm" },
-  { num: 92, title: "Nothing Beside Remains" },
-  { num: 93, title: "Contaminant" },
-  { num: 94, title: "Dead Woman Walking" },
-  { num: 95, title: "Absent Without Leave" },
-  { num: 96, title: "Return to Sender" },
-  { num: 97, title: "We All Ignore the Pit" },
-  { num: 98, title: "Lights Out" },
-  { num: 99, title: "Dust to Dust" },
-  { num: 100, title: "I Guess You Had To Be There" },
+  {
+    num: 91,
+    title: "The Coming Storm",
+    giver: "Michael Crew",
+    given: "31 January 2018",
+    subject:
+      "The man with the lightning scar explains what he did to himself, and what it cost."
+  },
+  {
+    num: 92,
+    title: "Nothing Beside Remains",
+    giver: "Barnabas Bennett",
+    given: "9 April 1824",
+    subject:
+      "A letter to Jonah Magnus from a world with the people taken out of it."
+  },
+  {
+    num: 93,
+    title: "Contaminant",
+    giver: "Lester Chang",
+    given: "5 March 1995",
+    subject:
+      "A widower's cleaning rituals, and the growth sealed behind the bath."
+  },
+  {
+    num: 94,
+    title: "Dead Woman Walking",
+    giver: "Georgina Barker",
+    given: "29 April 2017",
+    subject:
+      "A student occupation at Oxford, and the woman who got up off the anatomy table."
+  },
+  {
+    num: 95,
+    title: "Absent Without Leave",
+    giver: "Luca Moretti",
+    given: "2 November 1977",
+    subject:
+      "Hunting deserters in the Appennines, and the bodies stacked into the cave wall."
+  },
+  {
+    num: 96,
+    title: "Return to Sender",
+    giver: "Alfred Breekon",
+    given: "15 May 1996",
+    subject:
+      "The man who owned the delivery firm before the two of them took its name."
+  },
+  {
+    num: 97,
+    title: "We All Ignore the Pit",
+    giver: "Jackson Ellis",
+    given: "3 March 2009",
+    subject:
+      "A circular pit in a Washington town that nobody living there could see."
+  },
+  {
+    num: 98,
+    title: "Lights Out",
+    giver: "Dr Algernon Moss",
+    given: "14 May 1864",
+    subject:
+      "An auction won against the wrong bidder, and the dark that came that night."
+  },
+  {
+    num: 99,
+    title: "Dust to Dust",
+    giver: "Robert E. Geiger",
+    given: "20 February 1952",
+    subject:
+      "The Dust Bowl in 1935, and the farmer who kept talking after he died."
+  },
+  {
+    num: 100,
+    title: "I Guess You Had To Be There",
+    giver: "Martin, Tim, Basira and Melanie",
+    given: "May 2017",
+    subject:
+      "Four statements taken by four people, with no Head Archivist in the building."
+  },
 ]);

@@ -1,27 +1,39 @@
 # The Magnus Archive — a spoiler-safe character reader
 
 A character wiki for *The Magnus Archives* that only tells you what you already
-know. Set the episode gate to the last episode you have listened to, and every
-profile shows the Archive's understanding **as of that point** — later
-revelations are never drawn on the page.
+know. Set the slider to the episode you are **currently on**, and every profile
+shows the Archive as it stood *before* that episode — its own revelations stay
+sealed until you move past it.
 
-**Coverage: MAG001–MAG010.**
+**Coverage: MAG001–MAG100.** 273 figures, ~1,400 episode-tagged facts.
 
 ## How it works
 
-- **The gate.** A slider at the top sets your episode. Everything below it is
-  visible; everything above it is filtered out before render, not hidden with
-  CSS.
+- **The gate is the episode you are on, not the last one you finished.** At
+  MAG010 you see everything through MAG009. Move to MAG011 and MAG010's
+  revelations unlock. This is deliberate: you can look someone up *while*
+  listening without the page spoiling the episode playing in your ears.
+- **Returning cast is highlighted.** Characters you already know who feature in
+  the episode you are on get an amber dot in the index and a banner on their
+  profile — a cast list for what you are about to hear. Characters who *debut*
+  in that episode stay hidden, because naming them would give it away.
+- **Nothing past the gate is rendered.** Filtering happens before the DOM is
+  built, not with CSS.
 - **Profiles grow.** Each fact is tagged with the episode that establishes it,
-  so a profile is a timeline rather than a fixed page. Jonathan Sims at MAG001
-  is a man tidying a filing system; at MAG010 he is chasing a book collector and
-  losing evidence.
+  so a profile is a timeline. Jonathan Sims at MAG001 is a man tidying a filing
+  system; by MAG100 he is something else entirely, and you can watch the
+  turn happen one episode at a time.
 - **Descriptors evolve too.** The one-line summary under each name is itself
   episode-tagged, so it re-words as the character changes.
 - **Cross-references** are marked separately, in amber, and gated the same way —
   they only appear once the show itself has drawn the connection.
 - **Statement log** lists every episode up to the gate with its statement giver,
   date, subject, and the figures it introduces.
+- **Selecting a character never scrolls the page.** The position is pinned
+  across the re-render.
+
+Because the gate means "currently on", MAG100's own content unlocks only once
+the archive is extended past 100 — the data for it is present and waiting.
 
 ## Using it
 
@@ -35,10 +47,10 @@ revelations are never drawn on the page.
 
 ## A caveat worth stating plainly
 
-The whole dataset ships to the browser inside `data/characters.js`. The gate
-filters what gets rendered, which is genuinely enough to protect you from
-reading ahead by accident — but anyone who opens devtools or the repository can
-read the file. It is a courtesy, not a vault.
+The whole dataset ships to the browser inside `data/`. The gate filters what
+gets rendered, which is genuinely enough to protect you from reading ahead by
+accident — but anyone who opens devtools or the repository can read the files.
+It is a courtesy, not a vault.
 
 ## Running it
 
@@ -60,35 +72,57 @@ on by hand instead — **Settings → Pages → Source: Deploy from a branch**, 
 `main`, folder `/ (root)` — which serves the same files without using the
 workflow at all.
 
-## Extending past episode 10
+## Data layout
 
-Adding an episode is two edits, no code changes:
+The archive is built to grow ten episodes at a time without touching existing
+rows.
 
-1. Append the episode to `data/episodes.js`.
-2. In `data/characters.js`, add `{ ep: 11, text: "…" }` entries to existing
-   characters and append any new ones.
-
-The slider range, index, filters and statement log all derive from the data, so
-they pick up the new episode automatically.
-
-### Character schema
-
-```js
-{
-  id: "jonathan-sims",              // slug, used in the URL hash
-  name: "Jonathan Sims",
-  category: "Institute",            // Institute | Statement Giver | Subject |
-                                    // Unexplained | Organisation
-  aliases:  [{ ep: 1, text: "The Archivist" }],
-  blurbs:   [{ ep: 1, text: "One-line descriptor, latest ≤ gate wins." }],
-  entries:  [{ ep: 1, text: "A fact, tagged with the episode establishing it." }],
-  refs:     [{ ep: 9, text: "A connection the show itself draws." }],
-  statement: { ep: 1, ref: "MAG001 — Anglerfish", given: "22 April 2012" }
-}
+```
+data/episodes.js           MAG001–010 episode index
+data/episodes-011-100.js   MAG011–100 episode index
+data/characters.js         roster: identity rows only
+data/facts/f001-010.js     episode-tagged facts, one file per block of ten
+data/facts/f011-020.js     …
 ```
 
-A character's "first recorded" episode is computed as the lowest `ep` in
-`entries`, so there is no separate field to keep in sync.
+**`characters.js`** holds only identity — a character with no facts anywhere is
+ignored by the reader, so it is safe to register someone before writing their
+entries.
+
+```js
+{ id: "jonathan-sims",          // slug, used in the URL hash
+  name: "Jonathan Sims",
+  category: "Institute",        // Institute | Statement Giver | Subject |
+                                // Unexplained | Organisation
+  statement: { ep: 1, ref: "MAG001 — Anglerfish", given: "22 April 2012" } }
+```
+
+**`data/facts/*.js`** holds everything episode-tagged, as flat records:
+
+```js
+{ c: "jonathan-sims", ep: 4, t: "A fact, tagged with the episode that establishes it." }
+{ c: "jonathan-sims", ep: 1, k: "blurb", t: "One-line descriptor; latest ≤ gate wins." }
+{ c: "jonathan-sims", ep: 1, k: "alias", t: "The Archivist" }
+{ c: "joseph-rayner",  ep: 9, k: "ref",   t: "A connection the show itself draws." }
+{ c: "gerard-keay",    ep: 12, k: "seen" }   // features, but nothing new established
+```
+
+`k: "seen"` is how you mark a character as appearing in an episode without
+adding a fact — that is what drives the returning-cast highlight.
+
+A character's debut is computed as their lowest `ep`, so there is no separate
+field to keep in sync. Every character needs a `blurb` at or before their debut.
+
+## Adding episodes 101 and up
+
+1. Append the episodes to `data/episodes-011-100.js` (or a new index file).
+2. Create `data/facts/f101-110.js` following the same pattern and add a
+   `<script>` tag for it in `index.html`.
+
+The slider range, index, filters, ticks and statement log all derive from the
+data. There is a data-integrity checker worth running after any edit — it
+catches unregistered ids, out-of-range episodes, missing blurbs, and any fact
+that would leak past the gate.
 
 ## Sources and credit
 
