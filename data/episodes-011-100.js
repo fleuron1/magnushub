@@ -322,16 +322,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "An architect's assistant who designed workhouses in a trance, and the fingertips in the wall."
   },
-  { num: 51, title: "High Pressure" },
-  { num: 52, title: "Exceptional Risk" },
-  { num: 53, title: "Crusader" },
-  { num: 54, title: "Still Life" },
-  { num: 55, title: "Pest Control" },
-  { num: 56, title: "Children of the Night" },
-  { num: 57, title: "Personal Space" },
-  { num: 58, title: "Trail Rations" },
-  { num: 59, title: "Recluse" },
-  { num: 60, title: "The Observer Effect" },
+  {
+    num: 51,
+    title: "High Pressure",
+    giver: "Antonia Hayley",
+    given: "7 January 2008",
+    subject:
+      "A salvage dive off Sable Island, and the hole cut into the wreck."
+  },
+  {
+    num: 52,
+    title: "Exceptional Risk",
+    giver: "Philip Brown",
+    given: "9 April 2004",
+    subject:
+      "Twelve years on the wing at Wakefield, and the night the lights went out."
+  },
+  {
+    num: 53,
+    title: "Crusader",
+    giver: "Sergeant Walter Heller",
+    given: "5 September 1997",
+    subject:
+      "A tank gunner's war in North Africa, and the chamber he found under Alexandria."
+  },
+  {
+    num: 54,
+    title: "Still Life",
+    giver: "Alexander Scaplehorn",
+    given: "23 June 2013",
+    subject:
+      "A tax audit of a taxidermist's shop in Barnet."
+  },
+  {
+    num: 55,
+    title: "Pest Control",
+    giver: "Jordan Kennedy",
+    given: "3 November 2016",
+    subject:
+      "Two pest control jobs, years apart, that ended the same way."
+  },
+  {
+    num: 56,
+    title: "Children of the Night",
+    giver: "Trevor Herbert",
+    given: "10 July 2010",
+    subject:
+      "The misfiled second half of the vampire hunter's statement."
+  },
+  {
+    num: 57,
+    title: "Personal Space",
+    giver: "Carter Chilcott",
+    given: "4 April 2009",
+    subject:
+      "An isolation study aboard the Daedalus, and the window the Earth stopped being in."
+  },
+  {
+    num: 58,
+    title: "Trail Rations",
+    giver: "Mrs Carlisle",
+    given: "10 November 1845",
+    subject:
+      "A letter written from a cave on the Oregon Trail, five days after the shooting."
+  },
+  {
+    num: 59,
+    title: "Recluse",
+    giver: "Ronald Sinclair",
+    given: "29 November 2005",
+    subject:
+      "Three years in the Hill Top Road halfway house, and the basement under it."
+  },
+  {
+    num: 60,
+    title: "The Observer Effect",
+    giver: "Rosa Meyer",
+    given: "12 July 1972",
+    subject:
+      "A mirror unwrapped from a dead man's estate, and the face that was in it."
+  },
   { num: 61, title: "Hard Shoulder" },
   { num: 62, title: "First Edition" },
   { num: 63, title: "The End of the Tunnel" },
