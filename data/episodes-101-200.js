@@ -322,16 +322,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The first Astronomer Royal confesses to a murder that did not take."
   },
-  { num: 141, title: "Doomed Voyage" },
-  { num: 142, title: "Scrutiny" },
-  { num: 143, title: "Heart of Darkness" },
-  { num: 144, title: "Decrypted" },
-  { num: 145, title: "Infectious Doubts" },
-  { num: 146, title: "Threshold" },
-  { num: 147, title: "Weaver" },
-  { num: 148, title: "Extended Surveillance" },
-  { num: 149, title: "Concrete Jungle" },
-  { num: 150, title: "Cul-de-Sac" },
+  {
+    num: 141,
+    title: "Doomed Voyage",
+    giver: "Floyd Matharu",
+    given: "20 June 2019",
+    subject:
+      "Three years crewing Mikaele Salesa's ship, and the last thing it collected."
+  },
+  {
+    num: 142,
+    title: "Scrutiny",
+    giver: "Unnamed",
+    given: "27 June 2019",
+    subject:
+      "A tunnel collapse near Kentish Town, extracted a second time in a coffee shop."
+  },
+  {
+    num: 143,
+    title: "Heart of Darkness",
+    giver: "Manuela Dominguez",
+    given: "4 July 2019",
+    subject:
+      "The Dark Sun at Ny-Alesund, and the eclipse ritual that failed in 2015."
+  },
+  {
+    num: 144,
+    title: "Decrypted",
+    giver: "Gary Boylan",
+    given: "3 October 2009",
+    subject:
+      "Numbers broadcast from an abandoned pylon, and what they turned out to mean."
+  },
+  {
+    num: 145,
+    title: "Infectious Doubts",
+    giver: "Arthur Nolan",
+    given: "2009",
+    subject:
+      "Gertrude Robinson interviews a member of the Lightless Flame."
+  },
+  {
+    num: 146,
+    title: "Threshold",
+    giver: "Marcus McKenzie",
+    given: "1 September 2003",
+    subject:
+      "A lifetime of doors appearing where no door should be."
+  },
+  {
+    num: 147,
+    title: "Weaver",
+    giver: "Annabelle Cane",
+    given: "20 July 2018",
+    subject:
+      "A statement left in an empty house for whoever came looking."
+  },
+  {
+    num: 148,
+    title: "Extended Surveillance",
+    giver: "Sunil Maraj",
+    given: "3 April 2011",
+    subject:
+      "A shopping centre guard, an old CCTV manual, and the cameras that turned."
+  },
+  {
+    num: 149,
+    title: "Concrete Jungle",
+    giver: "Judith O'Neill",
+    given: "13 May 2013",
+    subject:
+      "An Amazon expedition, and the village built out of rubbish."
+  },
+  {
+    num: 150,
+    title: "Cul-de-Sac",
+    giver: "Herman Gorgoli",
+    given: "9 November 2014",
+    subject:
+      "A housing estate whose roads had suffixes but no names."
+  },
   { num: 151, title: "Big Picture" },
   { num: 152, title: "A Gravedigger's Envy" },
   { num: 153, title: "Love Bombing" },

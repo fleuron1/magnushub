@@ -517,6 +517,30 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "alexander-cunningham", name: "Alexander Cunningham", category: "Subject" },
   { id: "eileen-montague", name: "Eileen Montague", category: "Subject" },
   { id: "scoured-earth", name: "The Scoured Earth", category: "Unexplained" },
-  { id: "edmund-halley", name: "Edmund Halley", category: "Subject" }
+  { id: "edmund-halley", name: "Edmund Halley", category: "Subject" },
+
+  /* -- MAG141–150 ------------------------------------------------------ */
+  { id: "floyd-matharu", name: "Floyd Matharu", category: "Statement Giver",
+    statement: { ep: 141, ref: "MAG141 — Doomed Voyage", given: "20 June 2019" } },
+  { id: "water-engineer", name: "The Thames Water engineer", category: "Statement Giver",
+    statement: { ep: 142, ref: "MAG142 — Scrutiny", given: "27 June 2019" } },
+  { id: "gary-boylan", name: "Gary Boylan", category: "Statement Giver",
+    statement: { ep: 144, ref: "MAG144 — Decrypted", given: "3 October 2009" } },
+  { id: "sunil-maraj", name: "Sunil Maraj", category: "Statement Giver",
+    statement: { ep: 148, ref: "MAG148 — Extended Surveillance", given: "3 April 2011" } },
+  { id: "judith-oneill", name: "Judith O'Neill", category: "Statement Giver",
+    statement: { ep: 149, ref: "MAG149 — Concrete Jungle", given: "13 May 2013" } },
+  { id: "herman-gorgoli", name: "Herman Gorgoli", category: "Statement Giver",
+    statement: { ep: 150, ref: "MAG150 — Cul-de-Sac", given: "9 November 2014" } },
+
+  { id: "captain-gaultier", name: "Captain Gaultier", category: "Subject" },
+  { id: "the-dorian", name: "The Dorian", category: "Organisation" },
+  { id: "the-dark-sun", name: "The Dark Sun", category: "Unexplained" },
+  { id: "mrs-whitshore", name: "Mrs Whitshore", category: "Subject" },
+  { id: "mother-of-puppets", name: "The Mother of Puppets", category: "Unexplained" },
+  { id: "samson-stiller", name: "Samson Stiller", category: "Unexplained" },
+  { id: "nikos-anastos", name: "Dr Nikos Anastos", category: "Subject" },
+  { id: "fernanda-mikado", name: "Fernanda Mikado", category: "Subject" },
+  { id: "yotunde-uthman", name: "Yotunde Uthman", category: "Subject" }
 
 ]);
