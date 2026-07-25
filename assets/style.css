@@ -369,17 +369,20 @@ input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-of
 .char-link.featured:hover { border-left-color: var(--accent-warm); }
 .char-link.featured.on { border-left-color: var(--accent); }
 
-.featured-note {
-  display: flex;
-  align-items: center;
-  font-family: var(--mono);
-  font-size: 0.61rem;
-  letter-spacing: 0.04em;
+/* the block of returning cast pinned to the top of the index */
+.group-head.featured-head {
   color: var(--accent-warm);
-  margin: 0 0 0.75rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--line-soft);
-  line-height: 1.4;
+  border-bottom-color: color-mix(in srgb, var(--accent-warm) 45%, transparent);
+}
+.group-head.featured-head::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  margin-right: 0.45rem;
+  vertical-align: 0.1em;
 }
 
 .featured-flag {

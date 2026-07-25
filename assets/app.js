@@ -78,7 +78,7 @@
   var el = {};
   ["episodeRange", "gateEpisode", "gateTitle", "gateReveal", "tickRow", "epPrev",
    "epNext", "search", "filterRow", "charList", "indexEmpty", "profile",
-   "timelineBtn", "themeToggle", "featuredNote"].forEach(function (id) {
+   "timelineBtn", "themeToggle"].forEach(function (id) {
     el[id] = document.getElementById(id);
   });
 
@@ -223,7 +223,6 @@
     clear(el.charList);
 
     var known = CHARACTERS.filter(isKnown).filter(matches);
-    var featuredCount = CHARACTERS.filter(isFeatured).length;
 
     Array.prototype.forEach.call(el.filterRow.children, function (b) {
       var on = state.cats.indexOf(b.dataset.cat) !== -1;
@@ -235,54 +234,56 @@
       s.classList.toggle("on", parseInt(s.dataset.ep, 10) === state.ep);
     });
 
-    // Cast note for the episode you are about to hear.
-    if (featuredCount > 0) {
-      el.featuredNote.hidden = false;
-      clear(el.featuredNote);
-      el.featuredNote.appendChild(node("span", "dot"));
-      el.featuredNote.appendChild(document.createTextNode(
-        featuredCount + (featuredCount === 1 ? " returning figure features in " : " returning figures feature in ") + pad(state.ep)));
-    } else {
-      el.featuredNote.hidden = true;
-    }
-
     el.indexEmpty.hidden = known.length > 0;
 
-    CATEGORY_ORDER.forEach(function (cat) {
-      var group = known.filter(function (r) { return r.meta.category === cat; });
-      if (!group.length) return;
+    function byDebutThenName(a, b) {
+      var d = a.debut - b.debut;
+      return d !== 0 ? d : a.meta.name.localeCompare(b.meta.name);
+    }
 
-      group.sort(function (a, b) {
-        var f = (isFeatured(b) ? 1 : 0) - (isFeatured(a) ? 1 : 0);
-        if (f !== 0) return f;                       // featured first
-        var d = a.debut - b.debut;
-        return d !== 0 ? d : a.meta.name.localeCompare(b.meta.name);
+    function addLink(rec) {
+      var featured = isFeatured(rec);
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "char-link" +
+        (rec.meta.id === state.id && state.view === "profile" ? " on" : "") +
+        (featured ? " featured" : "");
+      if (featured) {
+        var dot = node("span", "dot");
+        dot.title = "Features in " + pad(state.ep);
+        b.appendChild(dot);
+      }
+      b.appendChild(document.createTextNode(rec.meta.name));
+      b.appendChild(node("span", "ep-tag", pad(rec.debut)));
+      b.addEventListener("click", function () {
+        state.id = rec.meta.id;
+        state.view = "profile";
+        render();
       });
+      el.charList.appendChild(b);
+    }
 
+    // Everyone featuring in the episode you are on goes in one block at the
+    // top, rather than being sorted to the front of each category and so
+    // scattered down the list.
+    var featured = known.filter(isFeatured).sort(byDebutThenName);
+    if (featured.length) {
+      el.charList.appendChild(
+        node("h2", "group-head featured-head", "Featuring in " + pad(state.ep)));
+      featured.forEach(addLink);
+    }
+
+    // The rest, by category, with the featured block's members left out so
+    // nobody appears twice.
+    CATEGORY_ORDER.forEach(function (cat) {
+      var group = known.filter(function (r) {
+        return r.meta.category === cat && !isFeatured(r);
+      });
+      if (!group.length) return;
+      group.sort(byDebutThenName);
       el.charList.appendChild(
         node("h2", "group-head", cat === "Statement Giver" ? "Statement Givers" : cat));
-
-      group.forEach(function (rec) {
-        var featured = isFeatured(rec);
-        var b = document.createElement("button");
-        b.type = "button";
-        b.className = "char-link" +
-          (rec.meta.id === state.id && state.view === "profile" ? " on" : "") +
-          (featured ? " featured" : "");
-        if (featured) {
-          var dot = node("span", "dot");
-          dot.title = "Features in " + pad(state.ep);
-          b.appendChild(dot);
-        }
-        b.appendChild(document.createTextNode(rec.meta.name));
-        b.appendChild(node("span", "ep-tag", pad(rec.debut)));
-        b.addEventListener("click", function () {
-          state.id = rec.meta.id;
-          state.view = "profile";
-          render();
-        });
-        el.charList.appendChild(b);
-      });
+      group.forEach(addLink);
     });
   }
 
