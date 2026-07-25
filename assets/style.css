@@ -183,6 +183,15 @@ kbd {
   margin-top: -0.15rem;
 }
 
+.gate-reveal {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-top: 0.2rem;
+}
+
 .gate-slider { position: relative; }
 
 input[type="range"] {
@@ -335,6 +344,59 @@ input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-of
   margin-left: 0.4rem;
 }
 
+/* featured in the episode you are on */
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  margin-right: 0.45rem;
+  vertical-align: 0.12em;
+  flex: none;
+}
+
+.char-link.featured {
+  color: var(--ink);
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--accent-warm) 13%, transparent),
+    transparent 85%
+  );
+  border-left-color: var(--accent-warm);
+}
+.char-link.featured:hover { border-left-color: var(--accent-warm); }
+.char-link.featured.on { border-left-color: var(--accent); }
+
+.featured-note {
+  display: flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.61rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-warm);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line-soft);
+  line-height: 1.4;
+}
+
+.featured-flag {
+  display: flex;
+  align-items: baseline;
+  margin: 0.9rem 0 0;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent-warm) 35%, transparent);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent-warm) 8%, transparent);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-warm);
+}
+
 .empty-note { font-size: 0.85rem; color: var(--ink-faint); font-style: italic; }
 
 .timeline-btn {
@@ -356,7 +418,7 @@ input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-of
 
 /* -------------------------------------------------------------- profile */
 
-.profile { min-width: 0; max-width: var(--measure); }
+.profile { min-width: 0; max-width: var(--measure); overflow-anchor: none; }
 .profile:focus { outline: none; }
 
 .p-head { margin-bottom: 1.75rem; }
