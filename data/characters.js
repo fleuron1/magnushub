@@ -272,7 +272,8 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "optic-solutions", name: "Optic Solutions Limited", category: "Organisation" },
   { id: "pinnacle-aerospace", name: "Pinnacle Aerospace", category: "Organisation" },
   { id: "manuela-dominguez", name: "Manuela Dominguez", category: "Subject" },
-  { id: "yan-kilbride", name: "Yan Kilbride", category: "Subject" },
+  // Rendered "Yan" in the MAG057 transcript and "Jan" from MAG106 on; same man.
+  { id: "yan-kilbride", name: "Jan Kilbride", category: "Subject" },
   { id: "tom", name: "Tom", category: "Unexplained" },
   { id: "eustace-wick", name: "Eustace Wick", category: "Unexplained" },
   { id: "benjamin-carlisle", name: "Benjamin Carlisle", category: "Subject" },
@@ -405,6 +406,36 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "bucoda-pit", name: "The pit at Bucoda", category: "Unexplained" },
   { id: "the-sandman", name: "The Sandman", category: "Unexplained" },
   { id: "stefan-brotchen", name: "Stefan Brotchen", category: "Subject" },
-  { id: "harry-eisenhard", name: "Harry Eisenhard", category: "Subject" }
+  { id: "harry-eisenhard", name: "Harry Eisenhard", category: "Subject" },
+
+  /* -- MAG101–110 ------------------------------------------------------ */
+  { id: "francois-deschamps", name: "François Deschamps", category: "Statement Giver",
+    statement: { ep: 102, ref: "MAG102 — Nesting Instinct", given: "4 June 2014" } },
+  { id: "dylan-anderson", name: "Dylan Anderson", category: "Statement Giver",
+    statement: { ep: 103, ref: "MAG103 — Cruelty Free", given: "2 July 2014" } },
+  { id: "charles-fleming", name: "Charles Fleming", category: "Statement Giver",
+    statement: { ep: 105, ref: "MAG105 — Total War", given: "1862" } },
+  { id: "howard-ewing", name: "Howard Ewing", category: "Statement Giver",
+    statement: { ep: 107, ref: "MAG107 — Third Degree", given: "1 February 2010" } },
+  { id: "adonis-biros", name: "Adonis Biros", category: "Statement Giver",
+    statement: { ep: 108, ref: "MAG108 — Monologue", given: "20 August 2009" } },
+  { id: "alexia-crawley", name: "Alexia Crawley", category: "Statement Giver",
+    statement: { ep: 110, ref: "MAG110 — Creature Feature", given: "14 March 2012" } },
+
+  { id: "sannikov-land", name: "Sannikov Land", category: "Unexplained" },
+  { id: "benoit-macon", name: "Benoît Maçon", category: "Subject" },
+  { id: "the-hive", name: "The Hive", category: "Unexplained" },
+  { id: "kurt-anderson", name: "Kurt Anderson", category: "Subject" },
+  { id: "angus-dale", name: "Angus Dale", category: "Subject" },
+  { id: "the-pig", name: "The pig", category: "Unexplained" },
+  { id: "danny-stoker", name: "Danny Stoker", category: "Subject" },
+  { id: "joseph-grimaldi", name: "Joseph Grimaldi", category: "Subject" },
+  { id: "william-hall", name: "Captain William Hall", category: "Subject" },
+  { id: "zhang-xiaoling", name: "Zhang Xiaoling", category: "Subject" },
+  { id: "officer-mustermann", name: "Officer Mustermann", category: "Unexplained" },
+  { id: "david-austin", name: "David Austin", category: "Subject" },
+  { id: "dexter-banks", name: "Dexter Banks", category: "Subject" },
+  { id: "neil-lagorio", name: "Neil Lagorio", category: "Subject" },
+  { id: "vardhan-darvish", name: "Vardhan Darvish", category: "Unexplained" }
 
 ]);

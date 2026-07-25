@@ -12,9 +12,14 @@
 global.window = {};
 const fs = require('fs');
 const R = require('path').join(__dirname, '..') + '/';
-require(R+'data/episodes.js'); require(R+'data/episodes-011-100.js');
-require(R+'data/characters.js');
-for (const f of fs.readdirSync(R+'data/facts').sort()) require(R+'data/facts/'+f);
+
+// Load exactly what index.html loads, in the same order, so the checker can
+// never drift out of sync with the page by missing a newly added data file.
+const srcs = [...fs.readFileSync(R + 'index.html', 'utf8')
+  .matchAll(/<script src="(data\/[^"]+)"><\/script>/g)].map(m => m[1]);
+if (!srcs.length) { console.log('FAIL: no data script tags found in index.html'); process.exit(1); }
+for (const s of srcs) require(R + s);
+console.log(`loaded ${srcs.length} data files from index.html`);
 
 const EPS = window.TMA_EPISODES, CH = window.TMA_CHARACTERS, FACTS = window.TMA_FACTS;
 let fail = 0; const bad = m => { console.log('FAIL: ' + m); fail++; };
@@ -23,7 +28,9 @@ const ids = new Set();
 for (const c of CH) { if (ids.has(c.id)) bad('dup id '+c.id); ids.add(c.id); }
 const nums = new Set();
 for (const e of EPS) { if (nums.has(e.num)) bad('dup episode '+e.num); nums.add(e.num); if(!e.title) bad('ep '+e.num+' no title'); }
-if (EPS.length !== 100) bad('expected 100 episodes, got ' + EPS.length);
+// The run must be a contiguous 1..N with no gaps, whatever N currently is.
+const maxEp = Math.max(...[...nums]);
+for (let n = 1; n <= maxEp; n++) if (!nums.has(n)) bad('missing episode ' + n);
 
 const rec = {};
 for (const f of FACTS) {
