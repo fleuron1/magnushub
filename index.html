@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Magnus Archive — a spoiler-safe character reader</title>
-<meta name="description" content="Character profiles for The Magnus Archives that only reveal what is known up to the episode you choose.">
+<meta name="description" content="Character profiles for The Magnus Archives that only reveal what is known before the episode you are on.">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128065;</text></svg>">
 </head>
@@ -33,20 +33,15 @@
   <div class="gate">
     <div class="gate-inner">
       <div class="gate-label">
-        <span class="gate-kicker">Reveal up to</span>
-        <strong id="gateEpisode">MAG010</strong>
-        <span id="gateTitle" class="gate-title">Vampire Killer</span>
+        <span class="gate-kicker">Currently on</span>
+        <strong id="gateEpisode">MAG100</strong>
+        <span id="gateTitle" class="gate-title"></span>
+        <span id="gateReveal" class="gate-reveal"></span>
       </div>
 
       <div class="gate-slider">
-        <input id="episodeRange" type="range" min="1" max="10" step="1" value="10"
-               aria-label="Episode to reveal up to" list="epTicks">
-        <datalist id="epTicks">
-          <option value="1"></option><option value="2"></option><option value="3"></option>
-          <option value="4"></option><option value="5"></option><option value="6"></option>
-          <option value="7"></option><option value="8"></option><option value="9"></option>
-          <option value="10"></option>
-        </datalist>
+        <input id="episodeRange" type="range" min="1" max="100" step="1" value="100"
+               aria-label="Episode you are currently on">
         <div class="tick-row" id="tickRow"></div>
       </div>
 
@@ -56,7 +51,8 @@
       </div>
     </div>
     <p class="gate-note">
-      Nothing past this point is drawn on the page. <span class="dim">Keyboard: <kbd>[</kbd> / <kbd>]</kbd></span>
+      The episode you are on stays sealed — profiles update once you move past it.
+      <span class="dim">Keyboard: <kbd>[</kbd> / <kbd>]</kbd></span>
     </p>
   </div>
 </header>
@@ -70,6 +66,8 @@
     </div>
 
     <div class="filter-row" id="filterRow" role="group" aria-label="Filter by category"></div>
+
+    <p id="featuredNote" class="featured-note" hidden></p>
 
     <nav id="charList" class="char-list"></nav>
 
@@ -85,9 +83,9 @@
 
 <footer class="site-foot">
   <p>
-    An unofficial fan reference for <em>The Magnus Archives</em> by Rusty Quill, covering MAG001–MAG010.
+    An unofficial fan reference for <em>The Magnus Archives</em> by Rusty Quill, covering MAG001–MAG100.
     Summaries are original; no transcript text is reproduced.
-    Source details drawn from the
+    Episode details checked against the
     <a href="https://snarp.github.io/magnus_archives_transcripts/" rel="noopener noreferrer" target="_blank">public transcript archive</a>.
   </p>
   <p class="dim">
@@ -96,7 +94,18 @@
 </footer>
 
 <script src="data/episodes.js"></script>
+<script src="data/episodes-011-100.js"></script>
 <script src="data/characters.js"></script>
+<script src="data/facts/f001-010.js"></script>
+<script src="data/facts/f011-020.js"></script>
+<script src="data/facts/f021-030.js"></script>
+<script src="data/facts/f031-040.js"></script>
+<script src="data/facts/f041-050.js"></script>
+<script src="data/facts/f051-060.js"></script>
+<script src="data/facts/f061-070.js"></script>
+<script src="data/facts/f071-080.js"></script>
+<script src="data/facts/f081-090.js"></script>
+<script src="data/facts/f091-100.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

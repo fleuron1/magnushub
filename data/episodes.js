@@ -2,7 +2,7 @@
    Coverage: MAG001–MAG010. All summaries are original descriptions written for
    this project; no transcript text is reproduced. */
 
-window.TMA_EPISODES = [
+window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
   {
     num: 1,
     title: "Anglerfish",
@@ -103,4 +103,4 @@ window.TMA_EPISODES = [
     blurb:
       "A homeless man gives an account of five killings he is sure about and two he is not. He does not survive the process of giving it."
   }
-];
+]);
