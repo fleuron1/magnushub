@@ -482,16 +482,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "An inherited book that lists deaths, including the reader's own."
   },
-  { num: 71, title: "Underground" },
-  { num: 72, title: "Takeaway" },
-  { num: 73, title: "Police Lights" },
-  { num: 74, title: "Fatigue" },
-  { num: 75, title: "A Long Way Down" },
-  { num: 76, title: "The Smell of Blood" },
-  { num: 77, title: "The Kind Mother" },
-  { num: 78, title: "Distant Cousin" },
-  { num: 79, title: "Hide and Seek" },
-  { num: 80, title: "The Librarian" },
+  {
+    num: 71,
+    title: "Underground",
+    giver: "Karolina Górka",
+    given: "25 January 2017",
+    subject:
+      "The last Victoria Line train of the night, and the carriage that was crushed inwards."
+  },
+  {
+    num: 72,
+    title: "Takeaway",
+    giver: "Craig Goodall",
+    given: "20 October 2009",
+    subject:
+      "A boarded-up takeaway in Walthamstow, and what its owner had served there."
+  },
+  {
+    num: 73,
+    title: "Police Lights",
+    giver: "Basira Hussain",
+    given: "12 July 2017",
+    subject:
+      "An armed operation to recover a kidnapped child from Maxwell Rayner's church."
+  },
+  {
+    num: 74,
+    title: "Fatigue",
+    giver: "Lydia Halligan",
+    given: "8 June 2015",
+    subject:
+      "Insomnia severe enough that sleeping and waking stopped being separate."
+  },
+  {
+    num: 75,
+    title: "A Long Way Down",
+    giver: "Stephen Walker",
+    given: "7 November 2006",
+    subject:
+      "A brother afraid of heights, taken up a tower in Paris on purpose."
+  },
+  {
+    num: 76,
+    title: "The Smell of Blood",
+    giver: "Melanie King",
+    given: "13 February 2017",
+    subject:
+      "A 1950s railway carriage in a Rotherham scrapyard that smelled of blood."
+  },
+  {
+    num: 77,
+    title: "The Kind Mother",
+    giver: "Lucy Cooper",
+    given: "15 September 1994",
+    subject:
+      "A visit home to Somerset, where a stranger was living as her mother."
+  },
+  {
+    num: 78,
+    title: "Distant Cousin",
+    giver: "Lawrence Moore",
+    given: "12 June 2001",
+    subject:
+      "A cousin at a family wedding who was not the cousin in the photographs."
+  },
+  {
+    num: 79,
+    title: "Hide and Seek",
+    giver: "The Archive staff",
+    given: "16 February 2017",
+    subject:
+      "Recorded in the tunnels. No statement, and no follow-up notes."
+  },
+  {
+    num: 80,
+    title: "The Librarian",
+    giver: "Jurgen Leitner",
+    given: "16 February 2017",
+    subject:
+      "The collector explains what the books actually are. Recorded in the tunnels."
+  },
   { num: 81, title: "A Guest for Mr. Spider" },
   { num: 82, title: "The Eyewitnesses" },
   { num: 83, title: "Drawing a Blank" },

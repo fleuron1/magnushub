@@ -307,6 +307,35 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "annabelle-cane", name: "Annabelle Cane", category: "Unexplained" },
   { id: "elizabeth-bates", name: "Dr Elizabeth Bates", category: "Subject" },
   { id: "book-of-the-dead", name: "The book of the dead", category: "Unexplained" },
-  { id: "philip-doah", name: "Philip Doah", category: "Subject" }
+  { id: "philip-doah", name: "Philip Doah", category: "Subject" },
+
+  /* -- MAG071–080 ------------------------------------------------------ */
+  { id: "karolina-gorka", name: "Karolina Górka", category: "Statement Giver",
+    statement: { ep: 71, ref: "MAG071 — Underground", given: "25 January 2017" } },
+  { id: "craig-goodall", name: "Craig Goodall", category: "Statement Giver",
+    statement: { ep: 72, ref: "MAG072 — Takeaway", given: "20 October 2009" } },
+  { id: "lydia-halligan", name: "Lydia Halligan", category: "Statement Giver",
+    statement: { ep: 74, ref: "MAG074 — Fatigue", given: "8 June 2015" } },
+  { id: "stephen-walker", name: "Stephen Walker", category: "Statement Giver",
+    statement: { ep: 75, ref: "MAG075 — A Long Way Down", given: "7 November 2006" } },
+  { id: "lucy-cooper", name: "Lucy Cooper", category: "Statement Giver",
+    statement: { ep: 77, ref: "MAG077 — The Kind Mother", given: "15 September 1994" } },
+  { id: "lawrence-moore", name: "Lawrence Moore", category: "Statement Giver",
+    statement: { ep: 78, ref: "MAG078 — Distant Cousin", given: "12 June 2001" } },
+
+  { id: "nicholas-lekman", name: "Nicholas Lekman", category: "Subject" },
+  { id: "john-haan", name: "John Haan", category: "Subject" },
+  { id: "lanying-haan", name: "Lanying Haan", category: "Subject" },
+  { id: "callum-brodie", name: "Callum Brodie", category: "Subject" },
+  { id: "leo-altman", name: "Leo Altman", category: "Subject" },
+  { id: "grant-walker", name: "Grant Walker", category: "Subject" },
+  { id: "william-hay", name: "William W. Hay", category: "Subject" },
+  { id: "rose-cooper", name: "Rose Cooper", category: "Subject" },
+  { id: "not-them", name: "The NotThem", category: "Unexplained" },
+  { id: "the-stranger", name: "The Stranger", category: "Unexplained" },
+  { id: "adelard-dekker", name: "Adelard Dekker", category: "Subject" },
+  { id: "not-sasha", name: "The thing wearing Sasha's face", category: "Unexplained" },
+  { id: "the-eye", name: "The Eye", category: "Unexplained" },
+  { id: "the-unknowing", name: "The Unknowing", category: "Unexplained" }
 
 ]);
