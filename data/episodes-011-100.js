@@ -562,16 +562,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "The collector explains what the books actually are. Recorded in the tunnels."
   },
-  { num: 81, title: "A Guest for Mr. Spider" },
-  { num: 82, title: "The Eyewitnesses" },
-  { num: 83, title: "Drawing a Blank" },
-  { num: 84, title: "Possessive" },
-  { num: 85, title: "Upon the Stair" },
-  { num: 86, title: "Tucked In" },
-  { num: 87, title: "The Uncanny Valley" },
-  { num: 88, title: "Dig" },
-  { num: 89, title: "Twice as Bright" },
-  { num: 90, title: "Body Builder" },
+  {
+    num: 81,
+    title: "A Guest for Mr. Spider",
+    giver: "Jonathan Sims",
+    given: "18 February 2017",
+    subject:
+      "The Archivist at eight years old, and the picture book his grandmother brought home."
+  },
+  {
+    num: 82,
+    title: "The Eyewitnesses",
+    giver: "Alice \"Daisy\" Tonner",
+    given: "29 November 2017",
+    subject:
+      "A detective's unofficial interrogation of the Archive staff. Not given as a statement."
+  },
+  {
+    num: 83,
+    title: "Drawing a Blank",
+    giver: "Chloe Ashburt",
+    given: "19 October 2013",
+    subject:
+      "A department store window display, and the mannequin that was swapped for another."
+  },
+  {
+    num: 84,
+    title: "Possessive",
+    giver: "Adrian Weiss",
+    given: "1 December 1990",
+    subject:
+      "A Suffolk village, a hoarder's junk pile, and the friend who went missing for a day."
+  },
+  {
+    num: 85,
+    title: "Upon the Stair",
+    giver: "Unattributed",
+    given: "Unknown",
+    subject:
+      "A man on the stairs who was not there, and the speaker who faded as he became real."
+  },
+  {
+    num: 86,
+    title: "Tucked In",
+    giver: "Benjamin Hatendi",
+    given: "2 March 1983",
+    subject:
+      "A body found in a wardrobe, and the thing that came every night afterwards."
+  },
+  {
+    num: 87,
+    title: "The Uncanny Valley",
+    giver: "Sebastian Skinner",
+    given: "10 October 2014",
+    subject:
+      "A plumbing call-out to the Gwydir Forest, and the workshop behind the door."
+  },
+  {
+    num: 88,
+    title: "Dig",
+    giver: "Enrique MacMillan",
+    given: "4 November 2003",
+    subject:
+      "A body on a beach in St Ives, and the book beside it with one word in it."
+  },
+  {
+    num: 89,
+    title: "Twice as Bright",
+    giver: "Jude Perry",
+    given: "24 April 2017",
+    subject:
+      "A servant of the Desolation explains how to feed a god, and shakes hands."
+  },
+  {
+    num: 90,
+    title: "Body Builder",
+    giver: "Ross Davenport",
+    given: "7 August 2013",
+    subject:
+      "A private gym in Aberdeen with excellent equipment and no other members."
+  },
   { num: 91, title: "The Coming Storm" },
   { num: 92, title: "Nothing Beside Remains" },
   { num: 93, title: "Contaminant" },

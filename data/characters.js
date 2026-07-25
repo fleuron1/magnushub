@@ -336,6 +336,39 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "adelard-dekker", name: "Adelard Dekker", category: "Subject" },
   { id: "not-sasha", name: "The thing wearing Sasha's face", category: "Unexplained" },
   { id: "the-eye", name: "The Eye", category: "Unexplained" },
-  { id: "the-unknowing", name: "The Unknowing", category: "Unexplained" }
+  { id: "the-unknowing", name: "The Unknowing", category: "Unexplained" },
+
+  /* -- MAG081–090 ------------------------------------------------------ */
+  { id: "chloe-ashburt", name: "Chloe Ashburt", category: "Statement Giver",
+    statement: { ep: 83, ref: "MAG083 — Drawing a Blank", given: "19 October 2013" } },
+  { id: "adrian-weiss", name: "Adrian Weiss", category: "Statement Giver",
+    statement: { ep: 84, ref: "MAG084 — Possessive", given: "1 December 1990" } },
+  { id: "benjamin-hatendi", name: "Benjamin Hatendi", category: "Statement Giver",
+    statement: { ep: 86, ref: "MAG086 — Tucked In", given: "2 March 1983" } },
+  { id: "sebastian-skinner", name: "Sebastian Skinner", category: "Statement Giver",
+    statement: { ep: 87, ref: "MAG087 — The Uncanny Valley", given: "10 October 2014" } },
+  { id: "enrique-macmillan", name: "Enrique MacMillan", category: "Statement Giver",
+    statement: { ep: 88, ref: "MAG088 — Dig", given: "4 November 2003" } },
+  { id: "jude-perry", name: "Jude Perry", category: "Statement Giver",
+    statement: { ep: 89, ref: "MAG089 — Twice as Bright", given: "24 April 2017" } },
+  { id: "ross-davenport", name: "Ross Davenport", category: "Statement Giver",
+    statement: { ep: 90, ref: "MAG090 — Body Builder", given: "7 August 2013" } },
+
+  { id: "the-web", name: "The Web", category: "Unexplained" },
+  { id: "mr-spider", name: "A Guest for Mr Spider", category: "Unexplained" },
+  { id: "the-admiral", name: "The Admiral", category: "Subject" },
+  { id: "calvin-benchley", name: "Calvin Benchley", category: "Subject" },
+  { id: "lana-billings", name: "Lana Billings", category: "Subject" },
+  { id: "gordon-goodman", name: "Gordon Goodman", category: "Subject" },
+  { id: "margaret-carnegie", name: "Margaret Carnegie", category: "Subject" },
+  { id: "eric-delano", name: "Eric Delano", category: "Institute" },
+  { id: "the-spiral", name: "The Spiral", category: "Unexplained" },
+  { id: "robin-patton", name: "Robin Patton", category: "Subject" },
+  { id: "megan", name: "Megan", category: "Unexplained" },
+  { id: "i-do-not-know-you", name: "I Do Not Know You", category: "Unexplained" },
+  { id: "the-dig-book", name: "The DIG book", category: "Unexplained" },
+  { id: "the-desolation", name: "The Desolation", category: "Unexplained" },
+  { id: "nicholas-tregenza", name: "Nicholas Tregenza", category: "Subject" },
+  { id: "marie-balandin", name: "Marie Balandin", category: "Subject" }
 
 ]);
