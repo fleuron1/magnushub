@@ -562,16 +562,86 @@ window.TMA_EPISODES = (window.TMA_EPISODES || []).concat([
     subject:
       "A house full of fog, recorded by someone who keeps forgetting he is recording."
   },
-  { num: 171, title: "The Gardener" },
-  { num: 172, title: "Strung Out" },
-  { num: 173, title: "Night Night" },
-  { num: 174, title: "The Great Beast" },
-  { num: 175, title: "Epoch" },
-  { num: 176, title: "Blood Ties" },
-  { num: 177, title: "Wonderland" },
-  { num: 178, title: "The Processing Line" },
-  { num: 179, title: "Accomplice" },
-  { num: 180, title: "Moving On" },
+  {
+    num: 171,
+    title: "The Gardener",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A garden of people grown into plants, and the man who cultivated it."
+  },
+  {
+    num: 172,
+    title: "Strung Out",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A theatre of the Web, running the same puppet show forever."
+  },
+  {
+    num: 173,
+    title: "Night Night",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A suburb with no streetlights, holding only children."
+  },
+  {
+    num: 174,
+    title: "The Great Beast",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A creature hundreds of miles long, made of people, walking."
+  },
+  {
+    num: 175,
+    title: "Epoch",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A world dried out by decades without rain, and the woman still documenting it."
+  },
+  {
+    num: 176,
+    title: "Blood Ties",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A hunt where the pack turns on whichever of them is weakest."
+  },
+  {
+    num: 177,
+    title: "Wonderland",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A hospital of the Spiral, where nothing you feel is real and it is your fault."
+  },
+  {
+    num: 178,
+    title: "The Processing Line",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A slaughterhouse run as a queue, with forms at every stage."
+  },
+  {
+    num: 179,
+    title: "Accomplice",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A junkyard furnace, and what Basira finds at the end of the hunt."
+  },
+  {
+    num: 180,
+    title: "Moving On",
+    giver: "The Archivist",
+    given: "Post-Change",
+    subject:
+      "A cemetery above ground, and a country house that should not be standing."
+  },
   { num: 181, title: "Ignorance" },
   { num: 182, title: "Wellbeing" },
   { num: 183, title: "Monument" },

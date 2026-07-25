@@ -567,6 +567,13 @@ window.TMA_CHARACTERS = (window.TMA_CHARACTERS || []).concat([
   { id: "jillian-smith", name: "Jillian Smith", category: "Subject" },
   { id: "emma-harvey", name: "Emma Harvey", category: "Institute" },
   { id: "corpse-routes", name: "The Corpse Routes", category: "Unexplained" },
-  { id: "danika-gelsthorpe", name: "Danika Gelsthorpe", category: "Subject" }
+  { id: "danika-gelsthorpe", name: "Danika Gelsthorpe", category: "Subject" },
+
+  /* -- MAG171–180 ------------------------------------------------------ */
+  { id: "night-street", name: "Night Street", category: "Unexplained" },
+  { id: "the-great-beast", name: "The Great Beast", category: "Unexplained" },
+  { id: "wonderland-house", name: "Wonderland House", category: "Unexplained" },
+  { id: "noah-thomson", name: "Noah Thomson", category: "Subject" },
+  { id: "upton-house", name: "Upton House", category: "Unexplained" }
 
 ]);
