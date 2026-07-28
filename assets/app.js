@@ -365,6 +365,14 @@
       var epi = episode(n);
       li.appendChild(node("span", "tl-num", pad(n)));
       if (epi) li.appendChild(node("p", "tl-title", epi.title));
+      // Where the entry came from. The episode index already carries who gave
+      // the statement and what it was about, and knowing that a fact arrived
+      // via a frightened stranger rather than via Elias changes how much of it
+      // you would want to believe.
+      if (epi && epi.giver) {
+        li.appendChild(node("p", "tl-src", epi.giver + (epi.given ? " · " + epi.given : "")));
+      }
+      if (epi && epi.subject) li.appendChild(node("p", "tl-subject", epi.subject));
       byEp[n].forEach(function (t) { li.appendChild(node("p", null, t)); });
       refs.filter(function (r) { return r.ep === n; }).forEach(function (r) {
         var box = node("div", "ref-note");
